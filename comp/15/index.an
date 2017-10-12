@@ -69,11 +69,11 @@
       \"Default Timeline\": {\
       }\
    }},\
-\"Preloader\": {\
+\"Precargador\": {\
    \"timelines\": {\
 \
    }},\
-\"Down-level\": {\
+\"Nivel inferior\": {\
    \"timelines\": {\
 \
    }}\
@@ -85,7 +85,7 @@
 	"expanded:images/bt_primaria_matematicas.png":"nil",
 	"expanded:images/restaurant_icons.png":"nil",
 	"expanded:images/bg_primaria_l.png":"nil",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"expanded:images/mal.png":"nil",
 	"mediagroup_media/error.mp3":"error",
 	"expanded:images/marcador.png":"nil",
@@ -2304,7 +2304,7 @@
 			"locked":"true",
 			"animationEnabled":"true"}},
 	"TransitionIdCounter":"1466",
-	"viewStartY":"0",
+	"viewStartY":"326",
 	"expanded:images/bt_ciencias%20-%20copia.png":"nil",
 	"expanded:images/ricepaper_v3.png":"nil",
 	"PubChromeFrameInstallerPrompt":"none",
@@ -2453,7 +2453,7 @@
 	"expanded:images/retina_wood.png":"nil",
 	"expanded:images/SpriteSheet_bt_cerrar.png":"nil",
 	"expanded:images/msg_incorrecto.png":"nil",
-	"StageZoomFactor":"100",
+	"StageZoomFactor":"50",
 	"Precargador-Default Timeline_playhead_ms":"0",
 	"expanded:images/skulls.png":"nil",
 	"expanded:images/SpriteSheet_bt_info.png":"nil",

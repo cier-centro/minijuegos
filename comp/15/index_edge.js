@@ -657,23 +657,23 @@ var symbols = {
             {
                 id: 'Text',
                 type: 'text',
-                rect: ['202px', '120px','692px','103px','auto', 'auto'],
+                rect: ['202px', '120px','600px','103px','auto', 'auto'],
                 opacity: 1,
-                text: "¿Señale ejemplos de desigualdad?",
+                text: "¿Por qué debo preocuparme por la desigualdad si yo no sufro ningún tipo de discriminación?",
                 font: ['Arial, Helvetica, sans-serif', 40, "rgba(38,68,103,1.00)", "normal", "none", ""]
             },
             {
                 id: 'TextCopy',
                 type: 'text',
-                rect: ['26.4%', '242px','583px','30px','auto', 'auto'],
-                text: "Intolerancia religiosa.",
+                rect: ['26.4%', '243px','583px','30px','auto', 'auto'],
+                text: "Afectan a la reducción de la pobreza.",
                 font: ['Arial, Helvetica, sans-serif', 25, "rgba(38,68,103,1.00)", "normal", "none", ""]
             },
             {
                 id: 'checkbox_1',
                 display: 'block',
                 type: 'rect',
-                rect: ['198px', '238px','49px','50px','auto', 'auto'],
+                rect: ['198px', '239px','49px','50px','auto', 'auto'],
                 borderRadius: ["5px 5px", "5px 5px", "5px 5px", "5px 5px"],
                 opacity: 1,
                 fill: ["rgba(255,255,255,0.00)"],
@@ -684,15 +684,15 @@ var symbols = {
             {
                 id: 'TextCopy2',
                 type: 'text',
-                rect: ['26.4%', '303px','583px','46px','auto', 'auto'],
-                text: "La homofobia.",
+                rect: ['26.4%', '304px','583px','58px','auto', 'auto'],
+                text: "Se generan Divisiones entre la sociedad.",
                 font: ['Arial, Helvetica, sans-serif', 25, "rgba(38,68,103,1.00)", "normal", "none", ""]
             },
             {
                 id: 'checkbox_2',
                 display: 'block',
                 type: 'rect',
-                rect: ['198px', '299px','49px','50px','auto', 'auto'],
+                rect: ['198px', '300px','49px','50px','auto', 'auto'],
                 borderRadius: ["5px 5px", "5px 5px", "5px 5px", "5px 5px"],
                 fill: ["rgba(255,255,255,0.00)"],
                 stroke: [0,"rgba(255,255,255,0.00)","none"],
@@ -702,15 +702,15 @@ var symbols = {
             {
                 id: 'TextCopy3',
                 type: 'text',
-                rect: ['26.4%', '364px','583px','30px','auto', 'auto'],
-                text: "El racismo.<br>",
+                rect: ['26.4%', '363px','583px','30px','auto', 'auto'],
+                text: "La desigualdad genera delincuencia.",
                 font: ['Arial, Helvetica, sans-serif', 25, "rgba(38,68,103,1.00)", "normal", "none", ""]
             },
             {
                 id: 'checkbox_3',
                 display: 'block',
                 type: 'rect',
-                rect: ['198px', '360px','49px','50px','auto', 'auto'],
+                rect: ['198px', '359px','49px','50px','auto', 'auto'],
                 borderRadius: ["5px 5px", "5px 5px", "5px 5px", "5px 5px"],
                 fill: ["rgba(255,255,255,0.00)"],
                 stroke: [0,"rgba(255,255,255,0.00)","none"],
@@ -720,7 +720,7 @@ var symbols = {
             {
                 id: 'TextCopy4',
                 type: 'text',
-                rect: ['26.4%', '420px','583px','30px','auto', 'auto'],
+                rect: ['26.4%', '421px','583px','30px','auto', 'auto'],
                 text: "Todas las anteriores.",
                 font: ['Arial, Helvetica, sans-serif', 25, "rgba(38,68,103,1.00)", "normal", "none", ""]
             },
@@ -728,7 +728,7 @@ var symbols = {
                 id: 'checkbox_4',
                 display: 'block',
                 type: 'rect',
-                rect: ['198px', '416px','49px','50px','auto', 'auto'],
+                rect: ['198px', '417px','49px','50px','auto', 'auto'],
                 borderRadius: ["5px 5px", "5px 5px", "5px 5px", "5px 5px"],
                 fill: ["rgba(255,255,255,0.00)"],
                 stroke: [0,"rgba(255,255,255,0.00)","none"],
@@ -1578,7 +1578,7 @@ var symbols = {
                 ["style", "border-style", 'none'],
                 ["style", "border-width", '0px'],
                 ["style", "width", '49px'],
-                ["style", "top", '416px'],
+                ["style", "top", '417px'],
                 ["style", "height", '50px'],
                 ["style", "display", 'block'],
                 ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
@@ -1664,7 +1664,7 @@ var symbols = {
                 ["style", "width", '20px']
             ],
             "${_TextCopy4}": [
-                ["style", "top", '420px'],
+                ["style", "top", '421px'],
                 ["style", "width", '583px'],
                 ["color", "color", 'rgba(38,68,103,1.00)'],
                 ["style", "height", '30px'],
@@ -1761,7 +1761,7 @@ var symbols = {
                 ["style", "left", '-6557px']
             ],
             "${_TextCopy}": [
-                ["style", "top", '242px'],
+                ["style", "top", '243px'],
                 ["style", "font-size", '25px'],
                 ["style", "height", '30px'],
                 ["color", "color", 'rgba(38,68,103,1.00)'],
@@ -1965,7 +1965,7 @@ var symbols = {
             ],
             "${_Text}": [
                 ["style", "top", '-100px'],
-                ["style", "width", '692px'],
+                ["style", "width", '600px'],
                 ["color", "color", 'rgba(38,68,103,1.00)'],
                 ["style", "height", '103px'],
                 ["style", "opacity", '1'],
@@ -2064,7 +2064,7 @@ var symbols = {
                 ["style", "border-style", 'none'],
                 ["style", "border-width", '0px'],
                 ["style", "width", '49px'],
-                ["style", "top", '299px'],
+                ["style", "top", '300px'],
                 ["style", "display", 'block'],
                 ["style", "height", '50px'],
                 ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
@@ -2159,7 +2159,7 @@ var symbols = {
                 ["style", "border-style", 'none'],
                 ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["style", "width", '49px'],
-                ["style", "top", '360px'],
+                ["style", "top", '359px'],
                 ["style", "height", '50px'],
                 ["style", "display", 'block'],
                 ["style", "border-width", '0px'],
@@ -2178,7 +2178,7 @@ var symbols = {
                 ["style", "border-style", 'none'],
                 ["style", "border-width", '0px'],
                 ["style", "width", '49px'],
-                ["style", "top", '238px'],
+                ["style", "top", '239px'],
                 ["style", "display", 'block'],
                 ["style", "height", '50px'],
                 ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
@@ -2346,10 +2346,10 @@ var symbols = {
                 ["style", "width", '20px']
             ],
             "${_TextCopy2}": [
-                ["style", "top", '303px'],
+                ["style", "top", '304px'],
                 ["style", "width", '583px'],
                 ["color", "color", 'rgba(38,68,103,1.00)'],
-                ["style", "height", '46px'],
+                ["style", "height", '58px'],
                 ["style", "opacity", '0'],
                 ["style", "left", '26.43%'],
                 ["style", "font-size", '25px']
@@ -2390,7 +2390,7 @@ var symbols = {
                 ["style", "width", '20px']
             ],
             "${_TextCopy3}": [
-                ["style", "top", '364px'],
+                ["style", "top", '363px'],
                 ["style", "font-size", '25px'],
                 ["style", "height", '30px'],
                 ["color", "color", 'rgba(38,68,103,1.00)'],
@@ -2641,7 +2641,7 @@ var symbols = {
                 { id: "eid1175", tween: [ "style", "${_bad20}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1440", tween: [ "transform", "${_checkbox_2}", "scaleY", '1', { fromValue: '0.2'}], position: 700, duration: 250 },
                 { id: "eid1444", tween: [ "transform", "${_checkbox_3}", "scaleY", '1', { fromValue: '0.2'}], position: 950, duration: 295 },
-                { id: "eid1446", tween: [ "style", "${_Text}", "top", '127px', { fromValue: '-100px'}], position: 0, duration: 450 }            ]
+                { id: "eid1446", tween: [ "style", "${_Text}", "top", '79px', { fromValue: '-100px'}], position: 0, duration: 450 }            ]
         }
     }
 },
