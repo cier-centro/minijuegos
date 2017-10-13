@@ -18,10 +18,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-         $("#Stage_slide_1").append( "<iframe src='comp/01/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
+         sym.getSymbol("slide_1").play();
          
          //textos
          //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
@@ -1977,38 +1974,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    //=========================================================
    
-   //Edge symbol: 'slide_5'
-   (function(symbolName) {   
-   
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-   })("slide_1");
-   //Edge symbol end:'slide_1'
-
-   //=========================================================
-   
    //Edge symbol: 'Hot_Spot'
    (function(symbolName) {   
    
@@ -3471,5 +3436,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
          })("mapa");
    //Edge symbol end:'mapa'
+
+   //=========================================================
+   
+   //Edge symbol: 'slide_1'
+   (function(symbolName) {   
+   
+   })("slide_1");
+   //Edge symbol end:'slide_1'
 
 })(jQuery, AdobeEdge, "EDGE-5531445");
