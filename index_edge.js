@@ -1754,8 +1754,8 @@ var symbols = {
                 ["style", "top", '469px'],
                 ["transform", "scaleY", '1'],
                 ["transform", "scaleX", '1'],
-                ["style", "left", '0px'],
-                ["style", "display", 'none']
+                ["style", "display", 'none'],
+                ["style", "left", '0px']
             ],
             "${_slide_41}": [
                 ["style", "display", 'none']
@@ -2282,7 +2282,7 @@ var symbols = {
                 { id: "eid1545", tween: [ "style", "${_slide_64}", "display", 'none', { fromValue: 'block'}], position: 64000, duration: 0 },
                 { id: "eid1518", tween: [ "style", "${_slide_51}", "display", 'block', { fromValue: 'none'}], position: 50000, duration: 0 },
                 { id: "eid1519", tween: [ "style", "${_slide_51}", "display", 'none', { fromValue: 'block'}], position: 51000, duration: 0 },
-                { id: "eid1624", tween: [ "style", "${_bt_back}", "display", 'block', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1979", tween: [ "style", "${_bt_back}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutBack" },
                 { id: "eid1618", tween: [ "style", "${_slide_99}", "display", 'block', { fromValue: 'none'}], position: 98000, duration: 0 },
                 { id: "eid1619", tween: [ "style", "${_slide_99}", "display", 'none', { fromValue: 'block'}], position: 99000, duration: 0 },
                 { id: "eid1546", tween: [ "style", "${_slide_65}", "display", 'block', { fromValue: 'none'}], position: 64000, duration: 0 },
@@ -2684,12 +2684,110 @@ var symbols = {
     gpuAccelerate: false,
     resizeInstances: true,
     content: {
+            dom: [
+                {
+                    id: 'btn_iniciar2',
+                    type: 'rect',
+                    cursor: ['pointer'],
+                    rect: ['593', '357px', 'auto', 'auto', 'auto', 'auto']
+                },
+                {
+                    rect: ['266px', '174px', '414px', '73px', 'auto', 'auto'],
+                    borderRadius: ['5px 5px', '5px 5px', '5px 5px', '5px 5px'],
+                    id: 'Rectangle8',
+                    stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                    type: 'rect',
+                    fill: ['rgba(0,66,104,1.00)']
+                },
+                {
+                    rect: ['295px', '182px', '224px', '30px', 'auto', 'auto'],
+                    id: 'TextCopy3',
+                    text: 'Actividad Interactiva',
+                    font: ['Arial, Helvetica, sans-serif', 22, 'rgba(255,255,255,1.00)', '100', 'none', ''],
+                    type: 'text'
+                },
+                {
+                    rect: ['295px', '206px', '431px', '30px', 'auto', 'auto'],
+                    id: 'TextCopy2',
+                    text: 'Agronomía, veterinaria y afines',
+                    font: ['Arial, Helvetica, sans-serif', 24, 'rgba(255,255,255,1.00)', '900', 'none', ''],
+                    type: 'text'
+                },
+                {
+                    rect: ['175px', '150px', '1044px', '120px', 'auto', 'auto'],
+                    id: 'icons-a',
+                    type: 'image',
+                    clip: ['rect(0px 119px 120px 0px)'],
+                    fill: ['rgba(0,0,0,0)', 'images/icons-a.png', '0px', '0px']
+                }
+            ],
+            symbolInstances: [
+            {
+                id: 'btn_iniciar2',
+                symbolName: 'btn_iniciar',
+                autoPlay: {
+
+               }
+            }            ]
         },
     states: {
         "Base State": {
+            "${_TextCopy3}": [
+                ["style", "top", '182px'],
+                ["style", "width", '224px'],
+                ["color", "color", 'rgba(255,255,255,1.00)'],
+                ["style", "font-weight", '100'],
+                ["style", "height", '30px'],
+                ["style", "opacity", '0'],
+                ["style", "left", '262px'],
+                ["style", "font-size", '22px']
+            ],
             "${symbolSelector}": [
                 ["style", "height", '580px'],
                 ["style", "width", '980px']
+            ],
+            "${_btn_iniciar2}": [
+                ["style", "top", '357px'],
+                ["transform", "scaleY", '0'],
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '0'],
+                ["style", "left", '505px'],
+                ["style", "cursor", 'pointer']
+            ],
+            "${_TextCopy2}": [
+                ["style", "top", '206px'],
+                ["style", "height", '30px'],
+                ["style", "font-weight", '900'],
+                ["color", "color", 'rgba(255,255,255,1.00)'],
+                ["style", "opacity", '0'],
+                ["style", "left", '262px'],
+                ["style", "width", '431px']
+            ],
+            "${_icons-a}": [
+                ["style", "top", '150px'],
+                ["transform", "scaleY", '0'],
+                ["style", "left", '175px'],
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '1'],
+                ["style", "clip", [0,119,120,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+                ["style", "-webkit-transform-origin", [5.75,50], {valueTemplate:'@@0@@% @@1@@%'} ],
+                ["style", "-moz-transform-origin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "-ms-transform-origin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "msTransformOrigin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "-o-transform-origin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "transform-origin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}]
+            ],
+            "${_Rectangle8}": [
+                ["color", "background-color", 'rgba(0,66,104,1.00)'],
+                ["style", "border-top-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "border-bottom-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "opacity", '1'],
+                ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "width", '0px'],
+                ["style", "top", '174px'],
+                ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "height", '73px'],
+                ["style", "left", '266px']
             ]
         }
     },
@@ -2697,10 +2795,30 @@ var symbols = {
         "Default Timeline": {
             fromState: "Base State",
             toState: "",
-            duration: 0,
-            autoPlay: true,
+            duration: 4000,
+            autoPlay: false,
             timeline: [
-            ]
+                { id: "eid1989", tween: [ "style", "${_btn_iniciar2}", "left", '593px', { fromValue: '505px'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid1991", tween: [ "style", "${_btn_iniciar2}", "left", '477px', { fromValue: '593px'}], position: 2500, duration: 500, easing: "easeOutBack" },
+                { id: "eid1980", tween: [ "transform", "${_icons-a}", "scaleX", '1', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
+                { id: "eid1984", tween: [ "style", "${_TextCopy3}", "left", '295px', { fromValue: '262px'}], position: 1000, duration: 597, easing: "easeOutBack" },
+                { id: "eid2000", tween: [ "style", "${_TextCopy3}", "left", '332px', { fromValue: '295px'}], position: 3000, duration: 500, easing: "easeOutBack" },
+                { id: "eid2009", tween: [ "style", "${_Rectangle8}", "left", '297px', { fromValue: '266px'}], position: 3000, duration: 750, easing: "easeOutBack" },
+                { id: "eid2012", tween: [ "style", "${_icons-a}", "opacity", '0', { fromValue: '1'}], position: 3250, duration: 750, easing: "easeOutBack" },
+                { id: "eid1985", tween: [ "style", "${_TextCopy3}", "opacity", '1', { fromValue: '0'}], position: 1000, duration: 597, easing: "easeOutBack" },
+                { id: "eid1994", tween: [ "style", "${_TextCopy3}", "opacity", '0', { fromValue: '1'}], position: 3000, duration: 500, easing: "easeOutBack" },
+                { id: "eid1988", tween: [ "style", "${_btn_iniciar2}", "opacity", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid1992", tween: [ "style", "${_btn_iniciar2}", "opacity", '0', { fromValue: '1'}], position: 2500, duration: 500, easing: "easeOutBack" },
+                { id: "eid1990", tween: [ "transform", "${_btn_iniciar2}", "scaleY", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid1982", tween: [ "style", "${_TextCopy2}", "left", '295px', { fromValue: '262px'}], position: 1298, duration: 597, easing: "easeOutBack" },
+                { id: "eid1999", tween: [ "style", "${_TextCopy2}", "left", '332px', { fromValue: '295px'}], position: 3250, duration: 500, easing: "easeOutBack" },
+                { id: "eid1986", tween: [ "style", "${_Rectangle8}", "width", '460px', { fromValue: '0px'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid2010", tween: [ "style", "${_icons-a}", "left", '206px', { fromValue: '175px'}], position: 3250, duration: 750, easing: "easeOutBack" },
+                { id: "eid2011", tween: [ "style", "${_Rectangle8}", "opacity", '0', { fromValue: '1'}], position: 3000, duration: 750, easing: "easeOutBack" },
+                { id: "eid1981", tween: [ "transform", "${_icons-a}", "scaleY", '1', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
+                { id: "eid1987", tween: [ "transform", "${_btn_iniciar2}", "scaleX", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid1983", tween: [ "style", "${_TextCopy2}", "opacity", '1', { fromValue: '0'}], position: 1298, duration: 597, easing: "easeOutBack" },
+                { id: "eid1993", tween: [ "style", "${_TextCopy2}", "opacity", '0', { fromValue: '1'}], position: 3250, duration: 500, easing: "easeOutBack" }            ]
         }
     }
 },
