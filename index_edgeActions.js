@@ -37,8 +37,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
          
-         $( "#Stage_slide_2" ).append( "<iframe src='comp/02/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
          
          //textos
          //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
@@ -1809,24 +1807,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
       
 
-      Symbol.bindElementAction(compId, symbolName, "${_bt_ini}", "click", function(sym, e) {
-         slideCount = 2;
-         sym.getComposition().getStage().stop("slide_2");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindElementAction(compId, symbolName, "${_bt_ini}", "mouseover", function(sym, e) {
-         sym.getSymbol("bt_ini").play("up");
-
-      });
-      //Edge binding end
-
-      Symbol.bindElementAction(compId, symbolName, "${_bt_ini}", "mouseout", function(sym, e) {
-         sym.getSymbol("bt_ini").stop(0);
-
-      });
-      //Edge binding end
+      
 
    })("stage");
    //Edge symbol end:'stage'
@@ -1918,6 +1903,24 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       
 
       
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function(sym, e) {
+         sym.getComposition().getStage().append( "<iframe src='comp/02/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2500, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_btn_iniciar2}", "click", function(sym, e) {
+         sym.play();
+
+      });
+      //Edge binding end
 
    })("slide_2");
    //Edge symbol end:'slide_2'
@@ -3399,26 +3402,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    //=========================================================
    
-   //Edge symbol: 'bt_ini'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 500, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-   })("bt_ini");
-   //Edge symbol end:'bt_ini'
-
-   //=========================================================
-   
    //Edge symbol: 'guia_1'
    (function(symbolName) {   
    
@@ -3442,7 +3425,55 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
    //Edge symbol: 'slide_1'
    (function(symbolName) {   
    
+      Symbol.bindElementAction(compId, symbolName, "${_btnac1}", "click", function(sym, e) {
+         sym.getComposition().getStage().play(1000);
+         
+
+      });
+      //Edge binding end
+
    })("slide_1");
    //Edge symbol end:'slide_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'btnac1'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 750, function(sym, e) {
+         sym.play(0);
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle6}", "mouseover", function(sym, e) {
+         sym.play();
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle6}", "mouseout", function(sym, e) {
+         sym.stop(111);
+
+      });
+      //Edge binding end
+
+   })("btnac1");
+   //Edge symbol end:'btnac1'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_iniciar'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function(sym, e) {
+         sym.play(2000);
+
+      });
+      //Edge binding end
+
+   })("btn_iniciar");
+   //Edge symbol end:'btn_iniciar'
 
 })(jQuery, AdobeEdge, "EDGE-5531445");
