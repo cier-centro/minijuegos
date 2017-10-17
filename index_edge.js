@@ -673,7 +673,7 @@ var symbols = {
                 id: 'bt_next',
                 display: 'block',
                 type: 'rect',
-                rect: ['920px', '469px','auto','auto','auto', 'auto']
+                rect: ['726px', '469px','auto','auto','auto', 'auto']
             },
             {
                 id: 'bt_back',
@@ -697,6 +697,13 @@ var symbols = {
                 rect: ['721px', '460px','334px','145px','auto', 'auto'],
                 fill: ["rgba(0,0,0,0)",im+"inst-icons.png",'0px','0px'],
                 transform: [[],[],[],['0.55','0.55']]
+            },
+            {
+                id: 'btn_home',
+                display: 'none',
+                type: 'rect',
+                rect: ['262px', '30','auto','auto','auto', 'auto'],
+                cursor: ['pointer']
             }],
             symbolInstances: [
             {
@@ -887,6 +894,10 @@ var symbols = {
                 autoPlay: {
 
                 }
+            },
+            {
+                id: 'btn_home',
+                symbolName: 'btn_home'
             },
             {
                 id: 'slide_9',
@@ -1502,6 +1513,9 @@ var symbols = {
             "${_slide_43}": [
                 ["style", "display", 'none']
             ],
+            "${_slide_95}": [
+                ["style", "display", 'none']
+            ],
             "${_inst-icons}": [
                 ["style", "top", '460px'],
                 ["transform", "scaleY", '0.55'],
@@ -1590,7 +1604,7 @@ var symbols = {
                 ["transform", "scaleY", '1'],
                 ["style", "overflow", 'hidden'],
                 ["style", "display", 'block'],
-                ["style", "left", '920px'],
+                ["style", "left", '726px'],
                 ["transform", "scaleX", '1']
             ],
             "${_slide_63}": [
@@ -1772,8 +1786,10 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '980px']
             ],
-            "${_slide_95}": [
-                ["style", "display", 'none']
+            "${_btn_home}": [
+                ["style", "display", 'none'],
+                ["style", "left", '262px'],
+                ["style", "cursor", 'pointer']
             ],
             "${_slide_51}": [
                 ["style", "display", 'none']
@@ -2173,6 +2189,7 @@ var symbols = {
                 { id: "eid1239", tween: [ "style", "${_slide_10}", "display", 'none', { fromValue: 'block'}], position: 10000, duration: 0 },
                 { id: "eid1560", tween: [ "style", "${_slide_72}", "display", 'block', { fromValue: 'none'}], position: 71000, duration: 0 },
                 { id: "eid1561", tween: [ "style", "${_slide_72}", "display", 'none', { fromValue: 'block'}], position: 72000, duration: 0 },
+                { id: "eid2024", tween: [ "style", "${_btn_home}", "display", 'block', { fromValue: 'none'}], position: 2000, duration: 0, easing: "easeOutBack" },
                 { id: "eid1622", tween: [ "style", "${_slide_101}", "display", 'block', { fromValue: 'none'}], position: 100000, duration: 0 },
                 { id: "eid1623", tween: [ "style", "${_slide_101}", "display", 'none', { fromValue: 'block'}], position: 101000, duration: 0 },
                 { id: "eid1120", tween: [ "style", "${_slide_21}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
@@ -2718,7 +2735,7 @@ var symbols = {
                     id: 'icons-a',
                     type: 'image',
                     clip: ['rect(0px 119px 120px 0px)'],
-                    fill: ['rgba(0,0,0,0)', 'images/icons-a.png', '0px', '0px']
+                    fill: ['rgba(0,0,0,0)', 'images/icons-a.png', '-580.0009765625px', '0px']
                 }
             ],
             symbolInstances: [
@@ -2765,6 +2782,7 @@ var symbols = {
             ],
             "${_icons-a}": [
                 ["style", "top", '150px'],
+                ["style", "background-position", [-580.0009765625,0], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["transform", "scaleY", '0'],
                 ["style", "left", '175px'],
                 ["transform", "scaleX", '0'],
@@ -7035,6 +7053,93 @@ var symbols = {
             timeline: [
                 { id: "eid1945", tween: [ "style", "${_btnsCopy2}", "left", '-31px', { fromValue: '-39px'}], position: 2000, duration: 500, easing: "easeOutSine" },
                 { id: "eid1948", tween: [ "style", "${_btnsCopy2}", "left", '-39px', { fromValue: '-31px'}], position: 2500, duration: 500, easing: "easeOutSine" }            ]
+        }
+    }
+},
+"btn_home": {
+    version: "4.0.1",
+    minimumCompatibleVersion: "4.0.1",
+    build: "4.0.1.365",
+    baseState: "Base State",
+    scaleToFit: "none",
+    centerStage: "none",
+    initialState: "Base State",
+    gpuAccelerate: false,
+    resizeInstances: false,
+    content: {
+            dom: [
+                {
+                    rect: ['2px', '-6px', '56px', '495px', 'auto', 'auto'],
+                    transform: [[], [], [], ['0.92', '0.92'], ['51.9405%', '6.1924%']],
+                    id: 'icons_home',
+                    type: 'image',
+                    clip: ['rect(4.34782600402832px 56px 56.73891830444336px 0px)'],
+                    fill: ['rgba(0,0,0,0)', 'images/icons_home.png', '0px', '0px']
+                },
+                {
+                    rect: ['36px', '-5px', '158px', '60px', 'auto', 'auto'],
+                    overflow: 'hidden',
+                    id: 'label_home',
+                    transform: [[], [], [], ['0.65', '0.65']],
+                    type: 'image',
+                    fill: ['rgba(0,0,0,0)', 'images/label_home.png', '0px', '0px']
+                },
+                {
+                    rect: ['0px', '0px', '170px', '50px', 'auto', 'auto'],
+                    id: 'Rectangle11',
+                    stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                    type: 'rect',
+                    fill: ['rgba(255,255,255,0.00)']
+                }
+            ],
+            symbolInstances: [
+            ]
+        },
+    states: {
+        "Base State": {
+            "${symbolSelector}": [
+                ["style", "height", '50px'],
+                ["style", "overflow", 'hidden'],
+                ["style", "width", '170px']
+            ],
+            "${_icons_home}": [
+                ["style", "top", '-6px'],
+                ["transform", "scaleY", '0'],
+                ["transform", "scaleX", '0'],
+                ["style", "-webkit-transform-origin", [51.94,6.19], {valueTemplate:'@@0@@% @@1@@%'} ],
+                ["style", "-moz-transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "-ms-transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "msTransformOrigin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "-o-transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "left", '2px'],
+                ["style", "clip", [4.34782600402832,56,56.73891830444336,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
+            ],
+            "${_Rectangle11}": [
+                ["color", "background-color", 'rgba(255,255,255,0.00)']
+            ],
+            "${_label_home}": [
+                ["style", "top", '29px'],
+                ["transform", "scaleY", '0.65'],
+                ["style", "overflow", 'hidden'],
+                ["transform", "scaleX", '0.65'],
+                ["style", "opacity", '0'],
+                ["style", "left", '40px']
+            ]
+        }
+    },
+    timelines: {
+        "Default Timeline": {
+            fromState: "Base State",
+            toState: "",
+            duration: 1250,
+            autoPlay: true,
+            timeline: [
+                { id: "eid2017", tween: [ "style", "${_label_home}", "top", '-5px', { fromValue: '29px'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid2019", tween: [ "style", "${_label_home}", "opacity", '1', { fromValue: '0'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid2015", tween: [ "style", "${_label_home}", "left", '36px', { fromValue: '40px'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid2021", tween: [ "transform", "${_icons_home}", "scaleX", '0.92', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
+                { id: "eid2023", tween: [ "transform", "${_icons_home}", "scaleY", '0.92', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" }            ]
         }
     }
 }

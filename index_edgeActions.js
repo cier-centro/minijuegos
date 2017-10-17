@@ -51,6 +51,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2000, function(sym, e) {
          sym.stop();
+         sym.getSymbol("btn_home").play(1);
+        
+         
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
         //$( "#Stage_slide_3" ).append( "<iframe src='comp/03/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
         
@@ -1813,6 +1816,16 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
       
 
+      Symbol.bindElementAction(compId, symbolName, "${_btn_home}", "click", function(sym, e) {
+         sym.play(0);
+         sym.getSymbol("slide_1").play(1);
+         $( "#Stage_slide_3" ).html(" ");
+         
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -1960,6 +1973,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4000, function(sym, e) {
          $( "#Stage_slide_3" ).append( "<iframe src='comp/03/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+         sym.getComposition().getStage().$("bt_next").show();
+         
          
 
       });
@@ -3497,5 +3512,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    })("btn_iniciar");
    //Edge symbol end:'btn_iniciar'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_home'
+   (function(symbolName) {   
+   
+   })("btn_home");
+   //Edge symbol end:'btn_home'
 
 })(jQuery, AdobeEdge, "EDGE-5531445");
