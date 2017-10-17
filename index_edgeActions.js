@@ -52,7 +52,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2000, function(sym, e) {
          sym.stop();
          sym.getSymbol("btn_home").play(1);
-        
+        slideCount = 3; 
          
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
         //$( "#Stage_slide_3" ).append( "<iframe src='comp/03/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
@@ -72,8 +72,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function(sym, e) {
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-        //$( "#Stage_slide_4" ).append( "<iframe src='comp/04/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+         slideCount = 4; 
+        $( "#Stage_slide_4" ).append( "<iframe src='comp/04/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+        sym.$("bt_next").show();
         
         
         //textos
@@ -478,7 +479,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
             sym.$('.center-wrapper').css("overflow","hidden");
             slideCount = 1;
             //cambiar según el número de slides
-            var numOfSlides = 36;
+            var numOfSlides = 29;
             
             if (slideCount <= 1){ 
             sym.setVariable("slideCount", 1);
