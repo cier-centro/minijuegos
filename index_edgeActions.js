@@ -70,33 +70,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       //Edge binding end
       
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         slideCount = 4; 
+        sym.stop();
         $( "#Stage_slide_4" ).append( "<iframe src='comp/04/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+        slideCount = 4; 
         sym.$("bt_next").show();
-        
-        
-        //textos
-        //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-        //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-        $(sym.lookupSelector("txt_unid")).html("Unidad 2");
-        $(sym.lookupSelector("textCount")).html("1 / 9");
 
       });
       //Edge binding end
       
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4000, function(sym, e) {
          sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
          $( "#Stage_slide_5" ).append( "<iframe src='comp/05/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Unidad 2");
-         $(sym.lookupSelector("textCount")).html("2 / 9");
+         slideCount = 5; 
+         sym.$("bt_next").show();
+         flackfinal = true;
 
       });
       //Edge binding end
@@ -478,6 +465,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindElementAction(compId, symbolName, "document", "compositionReady", function(sym, e) {
             sym.$('.center-wrapper').css("overflow","hidden");
             slideCount = 1;
+            flackfinal = false;
             //cambiar según el número de slides
             var numOfSlides = 29;
             
@@ -491,7 +479,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
             sym.showSlide = function (slideDirection){
             	$("video").trigger("pause");
             	$("audio").trigger("pause");
-            	slideCount = slideCount + slideDirection;
+            	console.log(flackfinal);
+            	if(flackfinal==false){
+            		slideCount = slideCount + slideDirection;
+            	}else{
+            		slideCount =30;
+            	}
                sym.getComposition().getStage().stop("slide_"+slideCount);
                sym.getSymbol("slide_"+slideCount).play(0);
             	//Beyond 22, change to 1
@@ -570,14 +563,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 29000, function(sym, e) {
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_30" ).append( "<iframe src='comp/30/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+         //$( "#Stage_slide_30" ).append( "<iframe src='comp/30/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
          
-         
-         //textos
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Unidad 2");
-         $(sym.lookupSelector("textCount")).html("9 / 9");
 
       });
       //Edge binding end
@@ -777,1019 +764,129 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 40000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-         //$( "#Stage_slide_40" ).append( "<iframe src='comp/40/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("40 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 41000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-         $( "#Stage_slide_2" ).append( "<iframe src='comp/02/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Bienvenida");
-         $(sym.lookupSelector("textCount")).html("2 / 3");
-         
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 42000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-        $( "#Stage_slide_3" ).append( "<iframe src='comp/03/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-        
-        
-        //textos
-        //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-        //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-        //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-        $(sym.lookupSelector("txt_unid")).html("Mapa de Aprendizajes");
-        $(sym.lookupSelector("textCount")).html("3 / 3");
-        
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 43000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-        //$( "#Stage_slide_4" ).append( "<iframe src='comp/04/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-        
-        
-        //textos
-        $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-        //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-        //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-        $(sym.lookupSelector("txt_unid")).html("Mapa de Navegación");
-        $(sym.lookupSelector("textCount")).html("1 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 44000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_5" ).append( "<iframe src='comp/05/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Guía de Navegación");
-         $(sym.lookupSelector("textCount")).html("2 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 45000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-      $( "#Stage_slide_6" ).append( "<iframe src='comp/06/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
       
+
       
+
       
-      //textos
-      $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-      //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-      //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-      $(sym.lookupSelector("txt_unid")).html("Título");
-      $(sym.lookupSelector("textCount")).html("3 / 9");
 
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 46000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_7" ).append( "<iframe src='comp/07/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Ejemplos");
-         $(sym.lookupSelector("textCount")).html("4 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 47000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_8" ).append( "<iframe src='comp/08/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Ejemplos");
-         $(sym.lookupSelector("textCount")).html("5 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 48000, function(sym, e) {
-         sym.stop();
-         
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_9" ).append( "<iframe src='comp/09/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("6 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 49000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_10" ).append( "<iframe src='comp/10/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("7 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 50000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_11" ).append( "<iframe src='comp/11/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("8 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 51000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_12" ).append( "<iframe src='comp/12/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("9 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 52000, function(sym, e) {
-          sym.stop();
-          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          
-         //$( "#Stage_slide_13" ).append( "<iframe src='comp/13/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Mapa de Navegación");
-         $(sym.lookupSelector("textCount")).html("1 / 9");
-         
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 53000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_14" ).append( "<iframe src='comp/14/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("2 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 54000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_15" ).append( "<iframe src='comp/15/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("3 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 55000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_16" ).append( "<iframe src='comp/16/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("4 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 56000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_17" ).append( "<iframe src='comp/17/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("6 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 57000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          $( "#Stage_slide_18" ).append( "<iframe src='comp/18/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("6 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 58000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_19" ).append( "<iframe src='comp/19/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("7 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 59000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          $( "#Stage_slide_20" ).append( "<iframe src='comp/20/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("8 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 60000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_21" ).append( "<iframe src='comp/21/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("9 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 61000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-          //$( "#Stage_slide_22" ).append( "<iframe src='comp/22/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 3");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("1 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 62000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          $( "#Stage_slide_23" ).append( "<iframe src='comp/23/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 3");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("2 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 63000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          $( "#Stage_slide_24" ).append( "<iframe src='comp/24/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 3");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("3 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 64000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_25" ).append( "<iframe src='comp/25/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 3");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("4 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 65000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_26" ).append( "<iframe src='comp/26/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 3");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Situaciones");
-         $(sym.lookupSelector("textCount")).html("5 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 66000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_27" ).append( "<iframe src='comp/27/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 3");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Situaciones");
-         $(sym.lookupSelector("textCount")).html("6 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 67000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_28" ).append( "<iframe src='comp/28/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 3");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Situaciones");
-         $(sym.lookupSelector("textCount")).html("7 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 68000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_29" ).append( "<iframe src='comp/29/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 3");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Situaciones");
-         $(sym.lookupSelector("textCount")).html("8 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 69000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_30" ).append( "<iframe src='comp/30/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Cierre");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Situaciones");
-         $(sym.lookupSelector("textCount")).html("9 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 70000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_31" ).append( "<iframe src='comp/31/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Cierre");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Cierre metacognitivo");
-         $(sym.lookupSelector("textCount")).html("1 / 1");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 71000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-          //$( "#Stage_slide_32" ).append( "<iframe src='comp/32/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("32 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 72000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-          //$( "#Stage_slide_33" ).append( "<iframe src='comp/33/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("33 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 73000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-           //$( "#Stage_slide_34" ).append( "<iframe src='comp/34/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("34 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 74000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-           //$( "#Stage_slide_35" ).append( "<iframe src='comp/35/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("35 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 75000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-           //$( "#Stage_slide_36" ).append( "<iframe src='comp/36/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("36 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 76000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-          //$( "#Stage_slide_37" ).append( "<iframe src='comp/37/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("37 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 77000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-           //$( "#Stage_slide_38" ).append( "<iframe src='comp/38/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("38 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 78000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-         //$( "#Stage_slide_39" ).append( "<iframe src='comp/39/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("39 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 78000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-         //$( "#Stage_slide_39" ).append( "<iframe src='comp/39/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("39 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 79000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-         //$( "#Stage_slide_40" ).append( "<iframe src='comp/40/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("40 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 80000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-         //$( "#Stage_slide_40" ).append( "<iframe src='comp/40/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("40 / **");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 81000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-         $( "#Stage_slide_2" ).append( "<iframe src='comp/02/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Bienvenida");
-         $(sym.lookupSelector("textCount")).html("2 / 3");
-         
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 82000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-        $( "#Stage_slide_3" ).append( "<iframe src='comp/03/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-        
-        
-        //textos
-        //$(sym.lookupSelector("miga_momento")).html("Desarrollo");
-        //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-        //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-        $(sym.lookupSelector("txt_unid")).html("Mapa de Aprendizajes");
-        $(sym.lookupSelector("textCount")).html("3 / 3");
-        
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 83000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         
-        //$( "#Stage_slide_4" ).append( "<iframe src='comp/04/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-        
-        
-        //textos
-        $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-        //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-        //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-        $(sym.lookupSelector("txt_unid")).html("Mapa de Navegación");
-        $(sym.lookupSelector("textCount")).html("1 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 84000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_5" ).append( "<iframe src='comp/05/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Guía de Navegación");
-         $(sym.lookupSelector("textCount")).html("2 / 9");
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 85000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-      $( "#Stage_slide_6" ).append( "<iframe src='comp/06/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
       
+
       
+
       
-      //textos
-      $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-      //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-      //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-      $(sym.lookupSelector("txt_unid")).html("Título");
-      $(sym.lookupSelector("textCount")).html("3 / 9");
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 86000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_7" ).append( "<iframe src='comp/07/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Ejemplos");
-         $(sym.lookupSelector("textCount")).html("4 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 87000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_8" ).append( "<iframe src='comp/08/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Ejemplos");
-         $(sym.lookupSelector("textCount")).html("5 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 88000, function(sym, e) {
-         sym.stop();
-         
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_9" ).append( "<iframe src='comp/09/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("6 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 89000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_10" ).append( "<iframe src='comp/10/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("7 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 90000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_11" ).append( "<iframe src='comp/11/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("8 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 91000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_12" ).append( "<iframe src='comp/12/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 1");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("9 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 92000, function(sym, e) {
-          sym.stop();
-          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          
-         //$( "#Stage_slide_13" ).append( "<iframe src='comp/13/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Mapa de Navegación");
-         $(sym.lookupSelector("textCount")).html("1 / 9");
-         
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 93000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_14" ).append( "<iframe src='comp/14/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("2 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 94000, function(sym, e) {
-         ym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_15" ).append( "<iframe src='comp/15/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("3 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 95000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_16" ).append( "<iframe src='comp/16/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("4 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 96000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_17" ).append( "<iframe src='comp/17/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("textCount")).html("6 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 97000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          $( "#Stage_slide_18" ).append( "<iframe src='comp/18/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("6 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 98000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_19" ).append( "<iframe src='comp/19/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("7 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 99000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          $( "#Stage_slide_20" ).append( "<iframe src='comp/20/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("8 / 9");
+      
 
-      });
-      //Edge binding end
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 100000, function(sym, e) {
-         sym.stop();
-         //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_21" ).append( "<iframe src='comp/21/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         $(sym.lookupSelector("miga_nivel")).html("Mapa - Parte 2");
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Actividades");
-         $(sym.lookupSelector("textCount")).html("9 / 9");
+      
 
-      });
-      //Edge binding end
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
 
       
 
@@ -1818,9 +915,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       
 
       Symbol.bindElementAction(compId, symbolName, "${_btn_home}", "click", function(sym, e) {
-         sym.play(0);
+         /*sym.play(0);
          sym.getSymbol("slide_1").play(1);
-         $( "#Stage_slide_3" ).html(" ");
+         $( "#Stage_slide_3" ).html(" ");*/
+         location.reload(true);
          
          
 
@@ -2386,11 +1484,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
    //Edge symbol: 'slide_30'
    (function(symbolName) {   
    
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
+      
+
+      Symbol.bindElementAction(compId, symbolName, "${_finalCopy}", "click", function(sym, e) {
+         location.reload(true);
 
       });
-            //Edge binding end
+      //Edge binding end
 
          })("slide_30");
    //Edge symbol end:'slide_30'
