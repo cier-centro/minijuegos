@@ -241,7 +241,7 @@ var symbols = {
                 id: 'slide_9',
                 display: 'none',
                 type: 'rect',
-                rect: ['0', '0','980px','580px','auto', 'auto']
+                rect: ['0px', '0px','auto','auto','auto', 'auto']
             },
             {
                 id: 'slide_8',
@@ -332,6 +332,12 @@ var symbols = {
             },
             {
                 id: 'btn_homeArtes',
+                display: 'none',
+                type: 'rect',
+                rect: ['262px', '30px','auto','auto','auto', 'auto']
+            },
+            {
+                id: 'btn_homeEducacion',
                 display: 'none',
                 type: 'rect',
                 rect: ['262px', '30px','auto','auto','auto', 'auto']
@@ -451,6 +457,10 @@ var symbols = {
                 }
             },
             {
+                id: 'btn_homeEducacion',
+                symbolName: 'btn_homeEducacion'
+            },
+            {
                 id: 'slide_38',
                 symbolName: 'slide_38',
                 autoPlay: {
@@ -554,10 +564,7 @@ var symbols = {
             },
             {
                 id: 'slide_9',
-                symbolName: 'slide_9',
-                autoPlay: {
-
-                }
+                symbolName: 'slide_9'
             },
             {
                 id: 'slide_18',
@@ -663,6 +670,11 @@ var symbols = {
                 ["style", "opacity", '1'],
                 ["style", "left", '0px'],
                 ["style", "width", '980px']
+            ],
+            "${_btn_homeEducacion}": [
+                ["style", "top", '30px'],
+                ["style", "left", '262px'],
+                ["style", "display", 'none']
             ],
             "${_slide_31}": [
                 ["style", "display", 'none'],
@@ -939,16 +951,12 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '980px']
             ],
-            "${_slide_24}": [
-                ["style", "top", '0px'],
-                ["style", "display", 'none'],
-                ["style", "overflow", 'hidden'],
-                ["style", "height", '580px'],
-                ["style", "opacity", '1'],
-                ["style", "left", '0px'],
-                ["style", "width", '980px']
-            ],
             "${_slide_9}": [
+                ["style", "top", '0px'],
+                ["style", "left", '0px'],
+                ["style", "display", 'none']
+            ],
+            "${_slide_24}": [
                 ["style", "top", '0px'],
                 ["style", "display", 'none'],
                 ["style", "overflow", 'hidden'],
@@ -1091,9 +1099,8 @@ var symbols = {
                 { id: "eid1132", tween: [ "style", "${_slide_2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1101", tween: [ "style", "${_slide_2}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
                 { id: "eid1131", tween: [ "style", "${_slide_2}", "display", 'none', { fromValue: 'block'}], position: 2000, duration: 0 },
-                { id: "eid1108", tween: [ "style", "${_slide_9}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1236", tween: [ "style", "${_slide_9}", "display", 'block', { fromValue: 'none'}], position: 8000, duration: 0 },
-                { id: "eid1237", tween: [ "style", "${_slide_9}", "display", 'none', { fromValue: 'block'}], position: 9000, duration: 0 },
+                { id: "eid2069", tween: [ "style", "${_slide_9}", "display", 'block', { fromValue: 'none'}], position: 8000, duration: 0, easing: "easeOutSine" },
+                { id: "eid2070", tween: [ "style", "${_slide_9}", "display", 'none', { fromValue: 'block'}], position: 9000, duration: 0, easing: "easeOutSine" },
                 { id: "eid1118", tween: [ "style", "${_slide_19}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1272", tween: [ "style", "${_slide_19}", "display", 'block', { fromValue: 'none'}], position: 18000, duration: 0 },
                 { id: "eid1273", tween: [ "style", "${_slide_19}", "display", 'none', { fromValue: 'block'}], position: 19000, duration: 0 },
@@ -1104,6 +1111,8 @@ var symbols = {
                 { id: "eid1109", tween: [ "style", "${_slide_10}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1238", tween: [ "style", "${_slide_10}", "display", 'block', { fromValue: 'none'}], position: 9000, duration: 0 },
                 { id: "eid1239", tween: [ "style", "${_slide_10}", "display", 'none', { fromValue: 'block'}], position: 10000, duration: 0 },
+                { id: "eid2067", tween: [ "style", "${_btn_homeEducacion}", "display", 'block', { fromValue: 'none'}], position: 8000, duration: 0, easing: "easeOutBack" },
+                { id: "eid2068", tween: [ "style", "${_btn_homeEducacion}", "display", 'none', { fromValue: 'block'}], position: 11000, duration: 0, easing: "easeOutBack" },
                 { id: "eid2024", tween: [ "style", "${_btn_home}", "display", 'block', { fromValue: 'none'}], position: 2000, duration: 0, easing: "easeOutBack" },
                 { id: "eid2049", tween: [ "style", "${_btn_home}", "display", 'none', { fromValue: 'block'}], position: 5000, duration: 0, easing: "easeOutBack" },
                 { id: "eid2050", tween: [ "style", "${_btn_homeArtes}", "display", 'block', { fromValue: 'none'}], position: 5000, duration: 0, easing: "easeOutBack" },
@@ -3712,6 +3721,12 @@ var symbols = {
                     rect: ['117', '63px', 'auto', 'auto', 'auto', 'auto']
                 },
                 {
+                    id: 'btnac3',
+                    type: 'rect',
+                    cursor: ['pointer'],
+                    rect: ['197', '231', 'auto', 'auto', 'auto', 'auto']
+                },
+                {
                     rect: ['1px', 'auto', '980px', '24px', 'auto', '59px'],
                     id: 'floor',
                     stroke: [0, 'rgb(0, 0, 0)', 'none'],
@@ -3744,6 +3759,13 @@ var symbols = {
             ],
             symbolInstances: [
             {
+                id: 'btnac1',
+                symbolName: 'btnac1',
+                autoPlay: {
+
+               }
+            },
+            {
                 id: 'btnc1',
                 symbolName: 'btnc1',
                 autoPlay: {
@@ -3751,8 +3773,8 @@ var symbols = {
                }
             },
             {
-                id: 'btnac1',
-                symbolName: 'btnac1',
+                id: 'btnac3',
+                symbolName: 'btnac3',
                 autoPlay: {
 
                }
@@ -3791,6 +3813,12 @@ var symbols = {
                 ["transform", "scaleX", '0.1'],
                 ["style", "opacity", '0'],
                 ["style", "left", '347px']
+            ],
+            "${_btnac3}": [
+                ["style", "top", '273px'],
+                ["style", "opacity", '0'],
+                ["style", "left", '196px'],
+                ["style", "cursor", 'pointer']
             ],
             "${_bg32}": [
                 ["style", "top", 'auto'],
@@ -4043,7 +4071,7 @@ var symbols = {
         "Default Timeline": {
             fromState: "Base State",
             toState: "",
-            duration: 6750,
+            duration: 7000,
             autoPlay: true,
             timeline: [
                 { id: "eid1941", tween: [ "style", "${_btnac1}", "top", '209px', { fromValue: '213px'}], position: 5750, duration: 750, easing: "easeOutBack" },
@@ -4065,6 +4093,7 @@ var symbols = {
                 { id: "eid1827", tween: [ "style", "${_img-map12}", "opacity", '1', { fromValue: '0'}], position: 940, duration: 500, easing: "easeOutBack" },
                 { id: "eid1775", tween: [ "transform", "${_pointer8}", "scaleY", '1', { fromValue: '0'}], position: 2170, duration: 500, easing: "easeOutBack" },
                 { id: "eid1790", tween: [ "transform", "${_rutes-map}", "scaleX", '0.78', { fromValue: '1'}], position: 1500, duration: 620, easing: "easeOutBack" },
+                { id: "eid2063", tween: [ "style", "${_btnac3}", "top", '231px', { fromValue: '273px'}], position: 6250, duration: 750, easing: "easeOutBack" },
                 { id: "eid1817", tween: [ "transform", "${_img-map9}", "scaleX", '0.8', { fromValue: '0.1'}], position: 1120, duration: 500, easing: "easeOutBack" },
                 { id: "eid1819", tween: [ "transform", "${_img-map9}", "scaleY", '0.8', { fromValue: '0.1'}], position: 1120, duration: 500, easing: "easeOutBack" },
                 { id: "eid2046", tween: [ "style", "${_btnc1}", "opacity", '1', { fromValue: '0'}], position: 6000, duration: 750, easing: "easeOutSine" },
@@ -4092,6 +4121,7 @@ var symbols = {
                 { id: "eid1917", tween: [ "style", "${_bg1}", "top", '288px', { fromValue: '338px'}], position: 5000, duration: 637, easing: "easeOutBack" },
                 { id: "eid1879", tween: [ "style", "${_p2}", "top", '519px', { fromValue: '291px'}], position: 3500, duration: 500, easing: "easeOutSine" },
                 { id: "eid1889", tween: [ "transform", "${_p2}", "scaleX", '1', { fromValue: '0'}], position: 3000, duration: 500, easing: "easeOutSine" },
+                { id: "eid2065", tween: [ "style", "${_btnac3}", "opacity", '1', { fromValue: '0'}], position: 6250, duration: 750, easing: "easeOutBack" },
                 { id: "eid1873", tween: [ "transform", "${_ch}", "scaleY", '1', { fromValue: '0'}], position: 2500, duration: 500, easing: "easeOutBack" },
                 { id: "eid1794", tween: [ "style", "${_img-map5}", "opacity", '1', { fromValue: '0'}], position: 1620, duration: 500, easing: "easeOutBack" },
                 { id: "eid1871", tween: [ "transform", "${_ch}", "scaleX", '1', { fromValue: '0.1'}], position: 2750, duration: 500, easing: "easeOutBack" },
@@ -4465,42 +4495,10 @@ var symbols = {
             fromState: "Base State",
             toState: "",
             duration: 1000,
-            autoPlay: true,
+            autoPlay: false,
             timeline: [
                 { id: "eid2041", tween: [ "style", "${__2Copy}", "top", '-36px', { fromValue: '-5px'}], position: 0, duration: 500, easing: "easeOutSine" },
                 { id: "eid2042", tween: [ "style", "${__2Copy}", "top", '-5px', { fromValue: '-36px'}], position: 500, duration: 500, easing: "easeOutSine" }            ]
-        }
-    }
-},
-"slide_9": {
-    version: "4.0.1",
-    minimumCompatibleVersion: "4.0.1",
-    build: "4.0.1.365",
-    baseState: "Base State",
-    scaleToFit: "none",
-    centerStage: "none",
-    initialState: "Base State",
-    gpuAccelerate: false,
-    resizeInstances: true,
-    content: {
-        },
-    states: {
-        "Base State": {
-            "${symbolSelector}": [
-                ["style", "height", '580px'],
-                ["style", "overflow", 'hidden'],
-                ["style", "width", '980px']
-            ]
-        }
-    },
-    timelines: {
-        "Default Timeline": {
-            fromState: "Base State",
-            toState: "",
-            duration: 0,
-            autoPlay: true,
-            timeline: [
-            ]
         }
     }
 },
@@ -5038,6 +5036,319 @@ var symbols = {
                 { id: "eid2015", tween: [ "style", "${_label_home}", "left", '36px', { fromValue: '40px'}], position: 500, duration: 750, easing: "easeOutBack" },
                 { id: "eid2021", tween: [ "transform", "${_icons_home}", "scaleX", '0.92', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
                 { id: "eid2023", tween: [ "transform", "${_icons_home}", "scaleY", '0.92', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" }            ]
+        }
+    }
+},
+"btnac3": {
+    version: "4.0.1",
+    minimumCompatibleVersion: "4.0.1",
+    build: "4.0.1.365",
+    baseState: "Base State",
+    scaleToFit: "none",
+    centerStage: "none",
+    initialState: "Base State",
+    gpuAccelerate: false,
+    resizeInstances: false,
+    content: {
+            dom: [
+                {
+                    rect: ['-10px', '-23px', '139px', '311px', 'auto', 'auto'],
+                    transform: [[], [], [], ['0.85', '0.85']],
+                    id: 'ac3',
+                    type: 'image',
+                    clip: ['rect(101.64694213867188px 139px 311px 0px)'],
+                    fill: ['rgba(0,0,0,0)', 'images/ac3.png', '0px', '0px']
+                },
+                {
+                    rect: ['-10px', '-23px', '139px', '311px', 'auto', 'auto'],
+                    transform: [[], [], [], ['0.85', '0.85']],
+                    id: 'ac3Copy',
+                    type: 'image',
+                    clip: ['rect(0px 139px 97.35282897949219px 0px)'],
+                    fill: ['rgba(0,0,0,0)', 'images/ac3.png', '0px', '0px']
+                },
+                {
+                    rect: ['0px', '0px', '118px', '264px', 'auto', 'auto'],
+                    id: 'hotspot',
+                    stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                    type: 'rect',
+                    fill: ['rgba(0,0,0,0.00)']
+                }
+            ],
+            symbolInstances: [
+            ]
+        },
+    states: {
+        "Base State": {
+            "${_ac3Copy}": [
+                ["style", "top", '-23px'],
+                ["transform", "scaleY", '0.85'],
+                ["transform", "scaleX", '0.85'],
+                ["style", "left", '-10px'],
+                ["style", "clip", [0,139,97.35282897949219,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
+            ],
+            "${symbolSelector}": [
+                ["style", "height", '264px'],
+                ["style", "width", '118px']
+            ],
+            "${_hotspot}": [
+                ["color", "background-color", 'rgba(0,0,0,0.00)']
+            ],
+            "${_ac3}": [
+                ["style", "top", '-23px'],
+                ["transform", "scaleY", '0.85'],
+                ["transform", "scaleX", '0.85'],
+                ["style", "left", '-10px'],
+                ["style", "clip", [101.64694213867188,139,311,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
+            ]
+        }
+    },
+    timelines: {
+        "Default Timeline": {
+            fromState: "Base State",
+            toState: "",
+            duration: 1000,
+            autoPlay: false,
+            timeline: [
+                { id: "eid2052", tween: [ "style", "${_ac3Copy}", "top", '18px', { fromValue: '-23px'}], position: 0, duration: 500, easing: "easeOutSine" },
+                { id: "eid2053", tween: [ "style", "${_ac3Copy}", "top", '-23px', { fromValue: '18px'}], position: 500, duration: 500, easing: "easeOutSine" }            ]
+        }
+    }
+},
+"btn_homeEducacion": {
+    version: "4.0.1",
+    minimumCompatibleVersion: "4.0.1",
+    build: "4.0.1.365",
+    baseState: "Base State",
+    scaleToFit: "none",
+    centerStage: "none",
+    initialState: "Base State",
+    gpuAccelerate: false,
+    resizeInstances: false,
+    content: {
+            dom: [
+                {
+                    rect: ['2px', '-6px', '56px', '495px', 'auto', 'auto'],
+                    transform: [[], [], [], ['0.92', '0.92']],
+                    id: 'icons_home',
+                    type: 'image',
+                    clip: ['rect(4.34782600402832px 56px 56.73891830444336px 0px)'],
+                    fill: ['rgba(0,0,0,0)', 'images/icons_home.png', '-1.0869565217391px', '-434.2391304348px']
+                },
+                {
+                    rect: ['36px', '-5px', '158px', '60px', 'auto', 'auto'],
+                    id: 'label_home',
+                    transform: [[], [], [], ['0.65', '0.65']],
+                    type: 'image',
+                    fill: ['rgba(0,0,0,0)', 'images/label_home.png', '0px', '0px']
+                },
+                {
+                    rect: ['0px', '0px', '170px', '50px', 'auto', 'auto'],
+                    id: 'Rectangle11',
+                    stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                    type: 'rect',
+                    fill: ['rgba(255,255,255,0.00)']
+                }
+            ],
+            symbolInstances: [
+            ]
+        },
+    states: {
+        "Base State": {
+            "${symbolSelector}": [
+                ["style", "height", '50px'],
+                ["style", "width", '170px'],
+                ["style", "overflow", 'hidden']
+            ],
+            "${_Rectangle11}": [
+                ["color", "background-color", 'rgba(255,255,255,0.00)']
+            ],
+            "${_label_home}": [
+                ["style", "top", '29px'],
+                ["transform", "scaleY", '0.65'],
+                ["style", "overflow", 'hidden'],
+                ["transform", "scaleX", '0.65'],
+                ["style", "opacity", '0'],
+                ["style", "left", '40px']
+            ],
+            "${_icons_home}": [
+                ["style", "top", '-6px'],
+                ["transform", "scaleY", '0'],
+                ["style", "clip", [4.34782600402832,56,56.73891830444336,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+                ["transform", "scaleX", '0'],
+                ["style", "left", '2px'],
+                ["style", "background-position", [-1.0869565217391,-434.2391304348], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "-webkit-transform-origin", [51.94,6.19], {valueTemplate:'@@0@@% @@1@@%'} ],
+                ["style", "-moz-transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "-ms-transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "msTransformOrigin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "-o-transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}]
+            ]
+        }
+    },
+    timelines: {
+        "Default Timeline": {
+            fromState: "Base State",
+            toState: "",
+            duration: 1250,
+            autoPlay: true,
+            timeline: [
+                { id: "eid2017", tween: [ "style", "${_label_home}", "top", '-5px', { fromValue: '29px'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid2019", tween: [ "style", "${_label_home}", "opacity", '1', { fromValue: '0'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid2015", tween: [ "style", "${_label_home}", "left", '36px', { fromValue: '40px'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid2021", tween: [ "transform", "${_icons_home}", "scaleX", '0.92', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
+                { id: "eid2023", tween: [ "transform", "${_icons_home}", "scaleY", '0.92', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" }            ]
+        }
+    }
+},
+"slide_9": {
+    version: "4.0.1",
+    minimumCompatibleVersion: "4.0.1",
+    build: "4.0.1.365",
+    baseState: "Base State",
+    scaleToFit: "none",
+    centerStage: "none",
+    initialState: "Base State",
+    gpuAccelerate: false,
+    resizeInstances: true,
+    content: {
+            dom: [
+                {
+                    id: 'btn_iniciar2',
+                    type: 'rect',
+                    cursor: ['pointer'],
+                    rect: ['593', '357px', 'auto', 'auto', 'auto', 'auto']
+                },
+                {
+                    rect: ['266px', '174px', '414px', '73px', 'auto', 'auto'],
+                    borderRadius: ['5px 5px', '5px 5px', '5px 5px', '5px 5px'],
+                    id: 'Rectangle8',
+                    stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                    type: 'rect',
+                    fill: ['rgba(0,66,104,1.00)']
+                },
+                {
+                    rect: ['295px', '182px', '224px', '30px', 'auto', 'auto'],
+                    id: 'TextCopy3',
+                    text: 'Actividad Interactiva',
+                    font: ['Arial, Helvetica, sans-serif', 22, 'rgba(255,255,255,1.00)', '100', 'none', ''],
+                    type: 'text'
+                },
+                {
+                    rect: ['295px', '206px', '431px', '30px', 'auto', 'auto'],
+                    id: 'TextCopy2',
+                    text: 'Ciencias de la educación',
+                    font: ['Arial, Helvetica, sans-serif', 24, 'rgba(255,255,255,1.00)', '900', 'none', ''],
+                    type: 'text'
+                },
+                {
+                    rect: ['175px', '150px', '1044px', '120px', 'auto', 'auto'],
+                    id: 'icons-a',
+                    type: 'image',
+                    clip: ['rect(0px 119px 120px 0px)'],
+                    fill: ['rgba(0,0,0,0)', 'images/icons-a.png', '-926.6025390625px', '0px']
+                }
+            ],
+            symbolInstances: [
+            {
+                id: 'btn_iniciar2',
+                symbolName: 'btn_iniciar',
+                autoPlay: {
+
+               }
+            }            ]
+        },
+    states: {
+        "Base State": {
+            "${_TextCopy3}": [
+                ["style", "top", '182px'],
+                ["style", "width", '224px'],
+                ["color", "color", 'rgba(255,255,255,1.00)'],
+                ["style", "font-weight", '100'],
+                ["style", "height", '30px'],
+                ["style", "opacity", '0'],
+                ["style", "left", '262px'],
+                ["style", "font-size", '22px']
+            ],
+            "${_btn_iniciar2}": [
+                ["style", "top", '357px'],
+                ["transform", "scaleY", '0'],
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '0'],
+                ["style", "left", '505px'],
+                ["style", "cursor", 'pointer']
+            ],
+            "${_TextCopy2}": [
+                ["style", "top", '206px'],
+                ["style", "height", '30px'],
+                ["style", "font-weight", '900'],
+                ["color", "color", 'rgba(255,255,255,1.00)'],
+                ["style", "opacity", '0'],
+                ["style", "left", '262px'],
+                ["style", "width", '431px']
+            ],
+            "${symbolSelector}": [
+                ["style", "height", '580px'],
+                ["style", "width", '980px']
+            ],
+            "${_icons-a}": [
+                ["style", "top", '150px'],
+                ["style", "left", '175px'],
+                ["transform", "scaleY", '0'],
+                ["style", "background-position", [-926.6025390625,0], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '1'],
+                ["style", "clip", [0,119,120,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+                ["style", "-webkit-transform-origin", [5.75,50], {valueTemplate:'@@0@@% @@1@@%'} ],
+                ["style", "-moz-transform-origin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "-ms-transform-origin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "msTransformOrigin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "-o-transform-origin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}],
+                ["style", "transform-origin", [5.75,50],{valueTemplate:'@@0@@% @@1@@%'}]
+            ],
+            "${_Rectangle8}": [
+                ["color", "background-color", 'rgba(0,66,104,1.00)'],
+                ["style", "border-top-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "border-bottom-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "opacity", '1'],
+                ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "width", '0px'],
+                ["style", "top", '174px'],
+                ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "height", '73px'],
+                ["style", "left", '266px']
+            ]
+        }
+    },
+    timelines: {
+        "Default Timeline": {
+            fromState: "Base State",
+            toState: "",
+            duration: 4000,
+            autoPlay: false,
+            timeline: [
+                { id: "eid1989", tween: [ "style", "${_btn_iniciar2}", "left", '593px', { fromValue: '505px'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid1991", tween: [ "style", "${_btn_iniciar2}", "left", '477px', { fromValue: '593px'}], position: 2500, duration: 500, easing: "easeOutBack" },
+                { id: "eid1980", tween: [ "transform", "${_icons-a}", "scaleX", '1', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
+                { id: "eid1984", tween: [ "style", "${_TextCopy3}", "left", '295px', { fromValue: '262px'}], position: 1000, duration: 597, easing: "easeOutBack" },
+                { id: "eid2000", tween: [ "style", "${_TextCopy3}", "left", '332px', { fromValue: '295px'}], position: 3000, duration: 500, easing: "easeOutBack" },
+                { id: "eid2009", tween: [ "style", "${_Rectangle8}", "left", '297px', { fromValue: '266px'}], position: 3000, duration: 750, easing: "easeOutBack" },
+                { id: "eid2012", tween: [ "style", "${_icons-a}", "opacity", '0', { fromValue: '1'}], position: 3250, duration: 750, easing: "easeOutBack" },
+                { id: "eid1985", tween: [ "style", "${_TextCopy3}", "opacity", '1', { fromValue: '0'}], position: 1000, duration: 597, easing: "easeOutBack" },
+                { id: "eid1994", tween: [ "style", "${_TextCopy3}", "opacity", '0', { fromValue: '1'}], position: 3000, duration: 500, easing: "easeOutBack" },
+                { id: "eid1988", tween: [ "style", "${_btn_iniciar2}", "opacity", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid1992", tween: [ "style", "${_btn_iniciar2}", "opacity", '0', { fromValue: '1'}], position: 2500, duration: 500, easing: "easeOutBack" },
+                { id: "eid1990", tween: [ "transform", "${_btn_iniciar2}", "scaleY", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid1982", tween: [ "style", "${_TextCopy2}", "left", '295px', { fromValue: '262px'}], position: 1298, duration: 597, easing: "easeOutBack" },
+                { id: "eid1999", tween: [ "style", "${_TextCopy2}", "left", '332px', { fromValue: '295px'}], position: 3250, duration: 500, easing: "easeOutBack" },
+                { id: "eid1986", tween: [ "style", "${_Rectangle8}", "width", '460px', { fromValue: '0px'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid2010", tween: [ "style", "${_icons-a}", "left", '206px', { fromValue: '175px'}], position: 3250, duration: 750, easing: "easeOutBack" },
+                { id: "eid2011", tween: [ "style", "${_Rectangle8}", "opacity", '0', { fromValue: '1'}], position: 3000, duration: 750, easing: "easeOutBack" },
+                { id: "eid1987", tween: [ "transform", "${_btn_iniciar2}", "scaleX", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid1981", tween: [ "transform", "${_icons-a}", "scaleY", '1', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
+                { id: "eid1983", tween: [ "style", "${_TextCopy2}", "opacity", '1', { fromValue: '0'}], position: 1298, duration: 597, easing: "easeOutBack" },
+                { id: "eid1993", tween: [ "style", "${_TextCopy2}", "opacity", '0', { fromValue: '1'}], position: 3250, duration: 500, easing: "easeOutBack" }            ]
         }
     }
 }

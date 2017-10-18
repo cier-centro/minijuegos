@@ -5,6 +5,21 @@
 	"expanded:images/img-map8.png":"nil",
 	"expanded:images/._nav_back_over.png":"nil",
 	"expanded:images/intro.png":"nil",
+	"symbol_btnac3":{
+		"element_${_hotspot}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"invisible":"true",
+			"timelineColor":"0x00a096"},
+		"element_${_ac3Copy}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"animationEnabled":"true",
+			"timelineColor":"0x00bda4"},
+		"element_${_ac3}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"}},
 	"expanded:images/pestana.png":"nil",
 	"symbol_globo":{
 		"defaultStageParentHeight":"512px",
@@ -441,11 +456,6 @@
       \"Default Timeline\": {\
       }\
    }},\
-\"slide_9\": {\
-   \"timelines\": {\
-      \"Default Timeline\": {\
-      }\
-   }},\
 \"slide_6\": {\
    \"timelines\": {\
       \"Default Timeline\": {\
@@ -462,6 +472,21 @@
       }\
    }},\
 \"btn_homeArtes\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"btnac3\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"btn_homeEducacion\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"slide_9\": {\
    \"timelines\": {\
       \"Default Timeline\": {\
       }\
@@ -558,6 +583,7 @@
 	"expanded:images/bt_inicio.png":"nil",
 	"expanded:images/secundaria_C/botones.png":"nil",
 	"expanded:images/F1_D2.png":"nil",
+	"btn_homeEducacion-Default Timeline_mark_ms":"-1",
 	"expanded:images/avion.png":"nil",
 	"expanded:images/nav_back.png":"nil",
 	"expanded:images/secundaria_L/tabs.png":"nil",
@@ -802,6 +828,7 @@
 	"expanded:images/F1_D13.png":"nil",
 	"expanded:images/nav/ok.png":"nil",
 	"expanded:images/img-map15.png":"nil",
+	"btn_homeEducacion-Default Timeline_playhead_ms":"0",
 	"symbol_slide_9":{
 		"dummyStageParentWidth":"723px",
 		"element_${_bg_defecto_simboloCopy2}":{
@@ -810,13 +837,40 @@
 			"timelineColor3":"0x295a6d",
 			"timelineColor":"0x008dc8"},
 		"dummyStageParentHeight":"512px",
-		"defaultStageParentWidth":"1366px",
+		"element_${_Rectangle8}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"animationEnabled":"true",
+			"timelineColor":"0xffd46d"},
 		"element_${_bg_03}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
 			"animationEnabled":"false",
 			"timelineColor":"0x2f73ad"},
-		"defaultStageParentHeight":"768px"},
+		"defaultStageParentHeight":"768px",
+		"element_${_btn_iniciar2}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"true",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentWidth":"1366px",
+		"element_${_icons-a}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"animationEnabled":"true",
+			"timelineColor":"0xceaef4"},
+		"element_${_TextCopy3}":{
+			"timelineColor2":"0xba5b89",
+			"timelineColor3":"0x734a5f",
+			"animationEnabled":"true",
+			"timelineColor":"0xdb619d"},
+		"element_${_TextCopy2}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
+			"animationEnabled":"true",
+			"timelineColor":"0xfb657a"}},
+	"expanded:images/ac1.png":"nil",
+	"btnac3-Default Timeline_mark_ms":"-1",
 	"symbol_slide_13":{
 		"dummyStageParentWidth":"768px",
 		"element_${_RectangleCopy3}":{
@@ -1208,6 +1262,7 @@
 			"timelineColor3":"0x29647e",
 			"animationEnabled":"false",
 			"timelineColor":"0x00a9fa"}},
+	"btnac3-Default Timeline_playhead_ms":"0",
 	"expanded:images/nav_c.png":"nil",
 	"expanded:images/help_combobox.png":"nil",
 	"symbol_mapa":{
@@ -1228,6 +1283,7 @@
 	"PreloadAudio":"auto",
 	"expanded:images/secundaria_L/botones.png":"nil",
 	"globo_invertido_horizontal-Default Timeline_playhead_ms":"0",
+	"expanded:images/ac3.png":"nil",
 	"btn_iniciar-Default Timeline_playhead_ms":"0",
 	"slide_50-Default Timeline_playhead_ms":"0",
 	"expanded:images/bt_ampliacion_2.png":"nil",
@@ -1385,7 +1441,22 @@
 	"expanded:images/nav/help_memory_game.png":"nil",
 	"Escena02-Default Timeline_playhead_ms":"0",
 	"expanded:images/secundaria_M/header.png":"nil",
-	"expanded:images/ac1.png":"nil",
+	"symbol_btn_homeEducacion":{
+		"element_${_label_home}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"animationEnabled":"true",
+			"timelineColor":"0x008dc8"},
+		"element_${_icons_home}":{
+			"timelineColor2":"0x5a558a",
+			"timelineColor3":"0x4a485e",
+			"animationEnabled":"true",
+			"timelineColor":"0x63599f"},
+		"element_${_Rectangle11}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"invisible":"true",
+			"timelineColor":"0x00a9fa"}},
 	"expanded:images/nav/help_input.png":"nil",
 	"expanded:images/bg3.png":"nil",
 	"expanded:images/icons_home.png":"nil",
@@ -1558,7 +1629,7 @@
 			"timelineColor":"0x008dc8"}},
 	"expanded:images/secundaria_L/iconos.png":"nil",
 	"expanded:images/iconos2.png":"nil",
-	"StageZoomFactor":"250",
+	"StageZoomFactor":"125",
 	"pixelsPerMs":"0.11742906663148",
 	"expanded:images/escudo.png":"nil",
 	"btnc1-Default Timeline_mark_ms":"-1",
@@ -2279,6 +2350,11 @@
 			"animationEnabled":"false",
 			"locked":"false",
 			"invisible":"true"},
+		"element_${_btn_homeEducacion}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"animationEnabled":"true",
+			"timelineColor":"0x2f73ad"},
 		"element_${_btn_homeArtes}":{
 			"timelineColor2":"0xb099ce",
 			"timelineColor3":"0x70657c",
@@ -3953,7 +4029,7 @@
 			"timelineColor":"0x00a9fa",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"false"}},
-	"TransitionIdCounter":"2052",
+	"TransitionIdCounter":"2071",
 	"slide_4-Default Timeline_mark_ms":"-1",
 	"viewStartY":"0",
 	"expanded:images/primaria_C/botones.png":"nil",
@@ -4120,6 +4196,16 @@
 			"timelineColor3":"0x70657c",
 			"animationEnabled":"false",
 			"timelineColor":"0xceaef4"},
+		"element_${_btnac3}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"animationEnabled":"true",
+			"timelineColor":"0x91c767"},
+		"element_${_ac3}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"false",
+			"timelineColor":"0x50bd82"},
 		"element_${__2}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
@@ -4537,8 +4623,8 @@
 	"expanded:images/primaria_M/header.png":"nil",
 	"expanded:images/map-point.png":"nil",
 	"Nivel inferior-Default Timeline_playhead_ms":"0",
-	"nextElementColorIndex":"14",
-	"stage-Default Timeline_playhead_ms":"383",
+	"nextElementColorIndex":"2",
+	"stage-Default Timeline_playhead_ms":"8575",
 	"guia-Default Timeline_playhead_ms":"0",
 	"expanded:media/F02_A01.mp4":"false",
 	"expanded:images/primaria_M/flecha.png":"nil",
