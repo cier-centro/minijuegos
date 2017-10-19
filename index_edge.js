@@ -364,7 +364,8 @@ var symbols = {
                 id: 'btn_homeHumanidades',
                 display: 'none',
                 type: 'rect',
-                rect: ['262px', '30px','auto','auto','auto', 'auto']
+                rect: ['262px', '30px','auto','auto','auto', 'auto'],
+                cursor: ['pointer']
             }],
             symbolInstances: [
             {
@@ -730,6 +731,7 @@ var symbols = {
             ],
             "${_btn_homeHumanidades}": [
                 ["style", "top", '30px'],
+                ["style", "cursor", 'pointer'],
                 ["style", "left", '262px'],
                 ["style", "display", 'none']
             ],
