@@ -5738,23 +5738,23 @@ var symbols = {
                     fill: ['rgba(0,66,104,1.00)']
                 },
                 {
-                    font: ['Arial, Helvetica, sans-serif', 22, 'rgba(255,255,255,1.00)', '100', 'none', ''],
+                    rect: ['295px', '182px', '224px', '30px', 'auto', 'auto'],
                     id: 'TextCopy3',
                     text: 'Actividad Interactiva',
-                    type: 'text',
-                    rect: ['295px', '182px', '224px', '30px', 'auto', 'auto']
+                    font: ['Arial, Helvetica, sans-serif', 22, 'rgba(255,255,255,1.00)', '100', 'none', ''],
+                    type: 'text'
                 },
                 {
-                    font: ['Arial, Helvetica, sans-serif', 24, 'rgba(255,255,255,1.00)', '900', 'none', ''],
+                    rect: ['295px', '206px', '679px', '30px', 'auto', 'auto'],
                     id: 'TextCopy2',
                     text: 'Ciencias sociales, derecho y ciencias políticas',
-                    type: 'text',
-                    rect: ['295px', '206px', '553px', '30px', 'auto', 'auto']
+                    font: ['Arial, Helvetica, sans-serif', 24, 'rgba(255,255,255,1.00)', '900', 'none', ''],
+                    type: 'text'
                 },
                 {
-                    type: 'image',
-                    id: 'icons-a',
                     rect: ['175px', '150px', '1044px', '120px', 'auto', 'auto'],
+                    id: 'icons-a',
+                    type: 'image',
                     clip: ['rect(0px 119px 120px 0px)'],
                     fill: ['rgba(0,0,0,0)', 'images/icons-a.png', '-117.0009765625px', '0px']
                 }
@@ -5780,10 +5780,6 @@ var symbols = {
                 ["style", "left", '262px'],
                 ["style", "font-size", '22px']
             ],
-            "${symbolSelector}": [
-                ["style", "height", '580px'],
-                ["style", "width", '980px']
-            ],
             "${_TextCopy2}": [
                 ["style", "top", '206px'],
                 ["style", "height", '30px'],
@@ -5791,7 +5787,11 @@ var symbols = {
                 ["color", "color", 'rgba(255,255,255,1.00)'],
                 ["style", "opacity", '0'],
                 ["style", "left", '262px'],
-                ["style", "width", '553px']
+                ["style", "width", '679px']
+            ],
+            "${symbolSelector}": [
+                ["style", "height", '580px'],
+                ["style", "width", '980px']
             ],
             "${_btn_iniciar2}": [
                 ["style", "top", '357px'],
@@ -5851,7 +5851,7 @@ var symbols = {
                 { id: "eid1990", tween: [ "transform", "${_btn_iniciar2}", "scaleY", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
                 { id: "eid1982", tween: [ "style", "${_TextCopy2}", "left", '295px', { fromValue: '262px'}], position: 1298, duration: 597, easing: "easeOutBack" },
                 { id: "eid1999", tween: [ "style", "${_TextCopy2}", "left", '332px', { fromValue: '295px'}], position: 3250, duration: 500, easing: "easeOutBack" },
-                { id: "eid1986", tween: [ "style", "${_Rectangle8}", "width", '582px', { fromValue: '0px'}], position: 500, duration: 750, easing: "easeOutBack" },
+                { id: "eid1986", tween: [ "style", "${_Rectangle8}", "width", '697px', { fromValue: '0px'}], position: 500, duration: 750, easing: "easeOutBack" },
                 { id: "eid2010", tween: [ "style", "${_icons-a}", "left", '206px', { fromValue: '175px'}], position: 3250, duration: 750, easing: "easeOutBack" },
                 { id: "eid2011", tween: [ "style", "${_Rectangle8}", "opacity", '0', { fromValue: '1'}], position: 3000, duration: 750, easing: "easeOutBack" },
                 { id: "eid1987", tween: [ "transform", "${_btn_iniciar2}", "scaleX", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
