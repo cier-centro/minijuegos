@@ -227,11 +227,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 17000, function(sym, e) {
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          $( "#Stage_slide_18" ).append( "<iframe src='comp/18/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+          //$( "#Stage_slide_18" ).append( "<iframe src='comp/18/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
          
          flackfinal = false;
          slideCount = 18; 
-         sym.getSymbol("btn_homeSalud").play(1);
+         sym.getSymbol("btn_homeEconomia").play(1);
 
       });
       //Edge binding end
@@ -240,13 +240,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
          $( "#Stage_slide_19" ).append( "<iframe src='comp/19/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Unidad 2");
-         $(sym.lookupSelector("textCount")).html("7 / 9");
+         slideCount = 19; 
+         flackfinal = false;
+         sym.$("bt_next").show();
 
       });
       //Edge binding end
@@ -255,13 +251,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
           $( "#Stage_slide_20" ).append( "<iframe src='comp/20/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Unidad 2");
-         $(sym.lookupSelector("textCount")).html("8 / 9");
+         slideCount = 20; 
+         flackfinal = true;
+         sym.$("bt_next").show();
 
       });
       //Edge binding end
@@ -269,14 +261,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 20000, function(sym, e) {
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-         $( "#Stage_slide_21" ).append( "<iframe src='comp/21/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         $(sym.lookupSelector("txt_unid")).html("Unidad 2");
-         $(sym.lookupSelector("textCount")).html("9 / 9");
+         //$( "#Stage_slide_21" ).append( "<iframe src='comp/21/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+         flackfinal = false;
+         slideCount = 21; 
+         sym.getSymbol("btn_homeEconomia").play(1);
 
       });
       //Edge binding end
@@ -285,13 +273,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
          
-          //$( "#Stage_slide_22" ).append( "<iframe src='comp/22/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+          $( "#Stage_slide_22" ).append( "<iframe src='comp/22/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
          
-         //textos
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Unidad 2");
-         $(sym.lookupSelector("textCount")).html("1 / 9");
+         slideCount = 22; 
+         flackfinal = false;
+         sym.$("bt_next").show();
 
       });
       //Edge binding end
@@ -300,13 +286,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
           $( "#Stage_slide_23" ).append( "<iframe src='comp/23/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Unidad 2");
-         $(sym.lookupSelector("textCount")).html("2 / 9");
+         slideCount = 23; 
+         flackfinal = true;
+         sym.$("bt_next").show();
 
       });
       //Edge binding end
@@ -314,14 +296,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 23000, function(sym, e) {
          sym.stop();
          //cargar actividad-reemplazar la carpeta según el código - cambiar el simbolo de acuerdo a donde carga
-          $( "#Stage_slide_24" ).append( "<iframe src='comp/24/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
-         
-         
-         //textos
-         //$(sym.lookupSelector("txt_sub_t")).html("Actividad 1");
-         //$(sym.lookupSelector("instruccion")).html("Lorem ipsum dolor sit amet, consectetur");
-         //$(sym.lookupSelector("txt_unid")).html("Unidad 2");
-         $(sym.lookupSelector("textCount")).html("3 / 9");
+          //$( "#Stage_slide_24" ).append( "<iframe src='comp/24/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+         flackfinal = false;
+         slideCount = 24; 
+         sym.getSymbol("btn_homeEconomia").play(1);
 
       });
       //Edge binding end
@@ -891,6 +869,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${_btn_homeEconomia}", "click", function(sym, e) {
+         location.reload(true);
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -1215,20 +1199,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    //=========================================================
    
-   //Edge symbol: 'slide_18'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-            //Edge binding end
-
-         })("slide_18");
-   //Edge symbol end:'slide_18'
-
-   //=========================================================
-   
    //Edge symbol: 'slide_19'
    (function(symbolName) {   
    
@@ -1254,20 +1224,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
          })("slide_20");
    //Edge symbol end:'slide_20'
-
-   //=========================================================
-   
-   //Edge symbol: 'slide_21'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-            //Edge binding end
-
-         })("slide_21");
-   //Edge symbol end:'slide_21'
 
    //=========================================================
    
@@ -1695,34 +1651,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    //=========================================================
    
-   //Edge symbol: 'slide_100'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-            //Edge binding end
-
-         })("slide_100");
-   //Edge symbol end:'slide_100'
-
-   //=========================================================
-   
-   //Edge symbol: 'slide_101'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
-
-      });
-            //Edge binding end
-
-         })("slide_101");
-   //Edge symbol end:'slide_101'
-
-   //=========================================================
-   
    //Edge symbol: 'home_1'
    (function(symbolName) {   
    
@@ -1801,6 +1729,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       Symbol.bindElementAction(compId, symbolName, "${_btnac5}", "click", function(sym, e) {
          sym.getComposition().getStage().stop(14000);
          sym.getComposition().getStage().getSymbol("slide_15").play(1);
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_btnac6}", "click", function(sym, e) {
+         sym.getComposition().getStage().stop(17000);
+         sym.getComposition().getStage().getSymbol("slide_18").play(1);
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_btnac7}", "click", function(sym, e) {
+         sym.getComposition().getStage().stop(20000);
+         sym.getComposition().getStage().getSymbol("slide_21").play(1);
 
       });
       //Edge binding end
@@ -2207,5 +2149,147 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
 
    })("btnac5");
    //Edge symbol end:'btnac5'
+
+   //=========================================================
+   
+   //Edge symbol: 'btnac6'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
+         sym.play(0);
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle16}", "mouseover", function(sym, e) {
+         sym.play();
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle16}", "mouseout", function(sym, e) {
+         sym.stop();
+         
+
+      });
+      //Edge binding end
+
+   })("btnac6");
+   //Edge symbol end:'btnac6'
+
+   //=========================================================
+   
+   //Edge symbol: 'slide_18'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         // introducir código aquí
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2500, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4000, function(sym, e) {
+         $( "#Stage_slide_18" ).append( "<iframe src='comp/18/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+         sym.getComposition().getStage().$("bt_next").show();
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_btn_iniciar2}", "click", function(sym, e) {
+         sym.play();
+         
+
+      });
+      //Edge binding end
+
+      })("slide_18");
+   //Edge symbol end:'slide_18'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_home_1'
+   (function(symbolName) {   
+   
+   })("btn_homeEconomia");
+   //Edge symbol end:'btn_homeEconomia'
+
+   //=========================================================
+   
+   //Edge symbol: 'slide_21'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         // introducir código aquí
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2500, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4000, function(sym, e) {
+         $( "#Stage_slide_21" ).append( "<iframe src='comp/21/index.html' width='980px' height='580px' frameborder='0' scrolling='no'></iframe>" );
+         sym.getComposition().getStage().$("bt_next").show();
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_btn_iniciar2}", "click", function(sym, e) {
+         sym.play();
+         
+
+      });
+      //Edge binding end
+
+      })("slide_21");
+   //Edge symbol end:'slide_21'
+
+   //=========================================================
+   
+   //Edge symbol: 'btnac7'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
+         sym.play(0);
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle17}", "mouseover", function(sym, e) {
+         sym.play();
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle17}", "mouseout", function(sym, e) {
+         sym.stop();
+         
+
+      });
+      //Edge binding end
+
+   })("btnac7");
+   //Edge symbol end:'btnac7'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn_home_1'
+   (function(symbolName) {   
+   
+   })("btn_homeHumanidades");
+   //Edge symbol end:'btn_homeHumanidades'
 
 })(jQuery, AdobeEdge, "EDGE-5531445");
