@@ -67,8 +67,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
                   TotalCheckBox = 4;
          //RESPUESTAS CAMBIAR POR false O true
                   sym.setVariable("Respuesta_1", false);
-                  sym.setVariable("Respuesta_2", false);
-                  sym.setVariable("Respuesta_3", false);
+                  sym.setVariable("Respuesta_2", true);
+                  sym.setVariable("Respuesta_3", true);
                   sym.setVariable("Respuesta_4", true);
                   sym.setVariable("Respuesta_5", false);
                   sym.setVariable("Respuesta_6", false);
