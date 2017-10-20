@@ -28,6 +28,15 @@ var symbols = {
     content: {
             dom: [
             {
+                id: 'hotspot_solucion',
+                display: 'none',
+                type: 'rect',
+                rect: ['444px', '483px','45px','45px','auto', 'auto'],
+                cursor: ['pointer'],
+                fill: ["rgba(192,192,192,0.00)"],
+                stroke: [0,"rgba(0,0,0,1)","none"]
+            },
+            {
                 id: 'slide1',
                 type: 'rect',
                 rect: ['20', '123','auto','auto','auto', 'auto']
@@ -659,7 +668,7 @@ var symbols = {
                 type: 'text',
                 rect: ['202px', '120px','692px','103px','auto', 'auto'],
                 opacity: 1,
-                text: "¿Por qué tener acceso a los servicios de salud sexual y reproductiva, incluida la planificación familiar es fundamental para una vida plena?",
+                text: "¿Por qué tener acceso a los servicios de salud sexual y reproductiva, incluida la planificación familiar es fundamental para una vida plena?  Marque las opciones correctas.",
                 font: ['Arial, Helvetica, sans-serif', 38, "rgba(38,68,103,1.00)", "normal", "none", ""]
             },
             {
@@ -721,7 +730,7 @@ var symbols = {
                 id: 'TextCopy4',
                 type: 'text',
                 rect: ['26.4%', '431px','583px','30px','auto', 'auto'],
-                text: "Todas las anteriores.",
+                text: "Se consigue pareja más rápido.",
                 font: ['Arial, Helvetica, sans-serif', 25, "rgba(38,68,103,1.00)", "normal", "none", ""]
             },
             {
@@ -762,27 +771,28 @@ var symbols = {
             {
                 id: 'bt_ayuda',
                 type: 'rect',
-                rect: ['536px', '483px','45px','45px','auto', 'auto']
+                rect: ['520px', '483px','45px','45px','auto', 'auto']
             },
             {
                 id: 'bt_reiniciar',
                 type: 'rect',
-                rect: ['490px', '483px','45px','45px','auto', 'auto']
+                rect: ['470px', '483px','45px','45px','auto', 'auto']
             },
             {
                 id: 'bt_solucion',
+                display: 'none',
                 type: 'rect',
                 rect: ['444px', '483px','45px','45px','auto', 'auto']
             },
             {
                 id: 'bt_validar',
                 type: 'rect',
-                rect: ['398px', '483px','45px','45px','auto', 'auto']
+                rect: ['420px', '483px','45px','45px','auto', 'auto']
             },
             {
                 id: 'hotspot_ayuda',
                 type: 'rect',
-                rect: ['541px', '483px','45px','45px','auto', 'auto'],
+                rect: ['520px', '483px','45px','45px','auto', 'auto'],
                 cursor: ['pointer'],
                 fill: ["rgba(192,192,192,0.00)"],
                 stroke: [0,"rgba(0,0,0,1)","none"]
@@ -790,15 +800,7 @@ var symbols = {
             {
                 id: 'hotspot_reiniciar',
                 type: 'rect',
-                rect: ['492px', '483px','45px','45px','auto', 'auto'],
-                cursor: ['pointer'],
-                fill: ["rgba(192,192,192,0.00)"],
-                stroke: [0,"rgba(0,0,0,1)","none"]
-            },
-            {
-                id: 'hotspot_solucion',
-                type: 'rect',
-                rect: ['444px', '483px','45px','45px','auto', 'auto'],
+                rect: ['470px', '483px','45px','45px','auto', 'auto'],
                 cursor: ['pointer'],
                 fill: ["rgba(192,192,192,0.00)"],
                 stroke: [0,"rgba(0,0,0,1)","none"]
@@ -1558,19 +1560,31 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_bad37}": [
+            "${_ok49}": [
                 ["style", "top", '177px'],
-                ["style", "display", 'none'],
                 ["style", "height", '20px'],
-                ["style", "left", '49px'],
+                ["style", "display", 'none'],
+                ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_bad22}": [
-                ["style", "top", '177px'],
-                ["style", "display", 'none'],
-                ["style", "height", '20px'],
-                ["style", "left", '49px'],
-                ["style", "width", '20px']
+            "${_checkbox_4}": [
+                ["style", "opacity", '1'],
+                ["style", "cursor", 'auto'],
+                ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["transform", "scaleY", '0.2'],
+                ["color", "border-color", 'rgba(255,255,255,0.00)'],
+                ["color", "background-color", 'rgba(255,255,255,0.00)'],
+                ["style", "border-top-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "border-bottom-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["transform", "scaleX", '0.2'],
+                ["style", "border-style", 'none'],
+                ["style", "border-width", '0px'],
+                ["style", "width", '49px'],
+                ["style", "top", '427px'],
+                ["style", "height", '50px'],
+                ["style", "display", 'block'],
+                ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "left", '198px']
             ],
             "${_resp_correcta}": [
                 ["style", "top", '234px'],
@@ -1580,7 +1594,7 @@ var symbols = {
                 ["style", "cursor", 'pointer'],
                 ["style", "width", '530px']
             ],
-            "${_bad4}": [
+            "${_bad29}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
                 ["style", "display", 'none'],
@@ -1601,7 +1615,7 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_ok44}": [
+            "${_ok5}": [
                 ["style", "top", '177px'],
                 ["style", "display", 'none'],
                 ["style", "height", '20px'],
@@ -1629,12 +1643,13 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_bad45}": [
-                ["style", "top", '177px'],
-                ["style", "height", '20px'],
+            "${_help_checkbox}": [
+                ["style", "top", '205px'],
+                ["style", "height", '234px'],
                 ["style", "display", 'none'],
-                ["style", "left", '49px'],
-                ["style", "width", '20px']
+                ["style", "left", '264px'],
+                ["style", "cursor", 'pointer'],
+                ["style", "width", '497px']
             ],
             "${_ok31}": [
                 ["style", "top", '177px'],
@@ -1666,7 +1681,7 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_bad2}": [
+            "${_bad11}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
                 ["style", "display", 'none'],
@@ -1680,18 +1695,17 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_hotspot_solucion}": [
-                ["color", "background-color", 'rgba(192,192,192,0)'],
-                ["style", "top", '483px'],
-                ["style", "height", '45px'],
-                ["style", "cursor", 'pointer'],
-                ["style", "left", '444px'],
-                ["style", "width", '45px']
-            ],
-            "${_ok40}": [
+            "${_ok15}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
                 ["style", "display", 'none'],
+                ["style", "left", '79px'],
+                ["style", "width", '20px']
+            ],
+            "${_ok42}": [
+                ["style", "top", '177px'],
+                ["style", "display", 'none'],
+                ["style", "height", '20px'],
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
@@ -1702,19 +1716,20 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_bt_validar}": [
-                ["style", "top", '590px'],
-                ["transform", "scaleY", '1'],
-                ["style", "height", '45px'],
-                ["transform", "scaleX", '1'],
-                ["style", "left", '398px'],
-                ["style", "width", '45px']
+            "${_TextCopy}": [
+                ["style", "top", '254px'],
+                ["style", "font-size", '25px'],
+                ["style", "height", '30px'],
+                ["color", "color", 'rgba(38,68,103,1.00)'],
+                ["style", "opacity", '0'],
+                ["style", "left", '26.43%'],
+                ["style", "width", '583px']
             ],
-            "${_ok42}": [
+            "${_bad4}": [
                 ["style", "top", '177px'],
-                ["style", "display", 'none'],
                 ["style", "height", '20px'],
-                ["style", "left", '79px'],
+                ["style", "display", 'none'],
+                ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
             "${_bad30}": [
@@ -1724,11 +1739,11 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_bad11}": [
+            "${_ok40}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
                 ["style", "display", 'none'],
-                ["style", "left", '49px'],
+                ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
             "${_bad20}": [
@@ -1748,14 +1763,13 @@ var symbols = {
             "${_success}": [
                 ["style", "left", '-6557px']
             ],
-            "${_TextCopy}": [
-                ["style", "top", '254px'],
-                ["style", "font-size", '25px'],
-                ["style", "height", '30px'],
-                ["color", "color", 'rgba(38,68,103,1.00)'],
-                ["style", "opacity", '0'],
-                ["style", "left", '26.43%'],
-                ["style", "width", '583px']
+            "${_bt_validar}": [
+                ["style", "top", '590px'],
+                ["transform", "scaleY", '1'],
+                ["style", "height", '45px'],
+                ["transform", "scaleX", '1'],
+                ["style", "left", '420px'],
+                ["style", "width", '45px']
             ],
             "${_ok37}": [
                 ["style", "top", '177px'],
@@ -1769,7 +1783,7 @@ var symbols = {
                 ["transform", "scaleY", '1'],
                 ["style", "height", '45px'],
                 ["transform", "scaleX", '1'],
-                ["style", "left", '536px'],
+                ["style", "left", '520px'],
                 ["style", "width", '45px']
             ],
             "${_hotspot_reiniciar}": [
@@ -1777,7 +1791,7 @@ var symbols = {
                 ["style", "top", '483px'],
                 ["style", "height", '45px'],
                 ["style", "cursor", 'pointer'],
-                ["style", "left", '492px'],
+                ["style", "left", '470px'],
                 ["style", "width", '45px']
             ],
             "${_hotspot_validar}": [
@@ -1788,31 +1802,19 @@ var symbols = {
                 ["style", "left", '395px'],
                 ["style", "width", '45px']
             ],
-            "${_ok5}": [
+            "${_ok33}": [
                 ["style", "top", '177px'],
                 ["style", "display", 'none'],
                 ["style", "height", '20px'],
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_checkbox_4}": [
-                ["style", "opacity", '1'],
-                ["style", "left", '198px'],
-                ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["transform", "scaleY", '0.2'],
-                ["color", "border-color", 'rgba(255,255,255,0.00)'],
-                ["color", "background-color", 'rgba(255,255,255,0.00)'],
-                ["style", "border-top-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "border-bottom-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["transform", "scaleX", '0.2'],
-                ["style", "border-style", 'none'],
-                ["style", "border-width", '0px'],
-                ["style", "width", '49px'],
-                ["style", "top", '427px'],
-                ["style", "height", '50px'],
-                ["style", "display", 'block'],
-                ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "cursor", 'auto']
+            "${_bad22}": [
+                ["style", "top", '177px'],
+                ["style", "display", 'none'],
+                ["style", "height", '20px'],
+                ["style", "left", '49px'],
+                ["style", "width", '20px']
             ],
             "${_ok1}": [
                 ["style", "top", '177px'],
@@ -1849,12 +1851,14 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_ok15}": [
-                ["style", "top", '177px'],
-                ["style", "height", '20px'],
+            "${_hotspot_solucion}": [
+                ["color", "background-color", 'rgba(192,192,192,0)'],
+                ["style", "top", '483px'],
+                ["style", "cursor", 'pointer'],
+                ["style", "height", '45px'],
                 ["style", "display", 'none'],
-                ["style", "left", '79px'],
-                ["style", "width", '20px']
+                ["style", "left", '444px'],
+                ["style", "width", '45px']
             ],
             "${_bad27}": [
                 ["style", "top", '177px'],
@@ -1867,17 +1871,17 @@ var symbols = {
                 ["style", "top", '590px'],
                 ["transform", "scaleY", '1'],
                 ["style", "height", '45px'],
+                ["style", "display", 'none'],
                 ["transform", "scaleX", '1'],
                 ["style", "left", '444px'],
                 ["style", "width", '45px']
             ],
-            "${_help_checkbox}": [
-                ["style", "top", '205px'],
-                ["style", "height", '234px'],
+            "${_bad45}": [
+                ["style", "top", '177px'],
+                ["style", "height", '20px'],
                 ["style", "display", 'none'],
-                ["style", "left", '264px'],
-                ["style", "cursor", 'pointer'],
-                ["style", "width", '497px']
+                ["style", "left", '49px'],
+                ["style", "width", '20px']
             ],
             "${_ok34}": [
                 ["style", "top", '177px'],
@@ -1900,13 +1904,12 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_bt_reiniciar}": [
-                ["style", "top", '590px'],
-                ["transform", "scaleY", '1'],
-                ["style", "height", '45px'],
-                ["transform", "scaleX", '1'],
-                ["style", "left", '490px'],
-                ["style", "width", '45px']
+            "${_ok6}": [
+                ["style", "top", '177px'],
+                ["style", "height", '20px'],
+                ["style", "display", 'none'],
+                ["style", "left", '79px'],
+                ["style", "width", '20px']
             ],
             "${_ok19}": [
                 ["style", "top", '177px'],
@@ -1915,11 +1918,11 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_ok49}": [
+            "${_bad37}": [
                 ["style", "top", '177px'],
-                ["style", "height", '20px'],
                 ["style", "display", 'none'],
-                ["style", "left", '79px'],
+                ["style", "height", '20px'],
+                ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
             "${_ok8}": [
@@ -1973,10 +1976,10 @@ var symbols = {
                 ["style", "left", '202px'],
                 ["style", "font-size", '38px']
             ],
-            "${_bad26}": [
+            "${_bad47}": [
                 ["style", "top", '177px'],
-                ["style", "display", 'none'],
                 ["style", "height", '20px'],
+                ["style", "display", 'none'],
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
@@ -2054,7 +2057,7 @@ var symbols = {
             ],
             "${_checkbox_2}": [
                 ["style", "opacity", '1'],
-                ["style", "left", '198px'],
+                ["style", "cursor", 'auto'],
                 ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["transform", "scaleY", '0.2'],
                 ["color", "border-color", 'rgba(255,255,255,0.00)'],
@@ -2069,7 +2072,7 @@ var symbols = {
                 ["style", "display", 'block'],
                 ["style", "height", '50px'],
                 ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "cursor", 'auto']
+                ["style", "left", '198px']
             ],
             "${_bad7}": [
                 ["style", "top", '177px'],
@@ -2134,25 +2137,6 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_checkbox_3}": [
-                ["style", "opacity", '1'],
-                ["style", "left", '198px'],
-                ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["transform", "scaleY", '0.2'],
-                ["color", "border-color", 'rgba(255,255,255,0.00)'],
-                ["color", "background-color", 'rgba(255,255,255,0.00)'],
-                ["style", "border-top-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "border-bottom-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["transform", "scaleX", '0.2'],
-                ["style", "border-style", 'none'],
-                ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "width", '49px'],
-                ["style", "top", '371px'],
-                ["style", "height", '50px'],
-                ["style", "display", 'block'],
-                ["style", "border-width", '0px'],
-                ["style", "cursor", 'auto']
-            ],
             "${_bad21}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
@@ -2167,24 +2151,36 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
+            "${_checkbox_3}": [
+                ["style", "opacity", '1'],
+                ["style", "cursor", 'auto'],
+                ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["transform", "scaleY", '0.2'],
+                ["color", "border-color", 'rgba(255,255,255,0.00)'],
+                ["color", "background-color", 'rgba(255,255,255,0.00)'],
+                ["style", "border-top-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "border-bottom-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["transform", "scaleX", '0.2'],
+                ["style", "border-style", 'none'],
+                ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "width", '49px'],
+                ["style", "top", '371px'],
+                ["style", "height", '50px'],
+                ["style", "display", 'block'],
+                ["style", "border-width", '0px'],
+                ["style", "left", '198px']
+            ],
             "${_slide1}": [
-                ["style", "top", '62px'],
-                ["transform", "scaleY", '1'],
+                ["transform", "scaleX", '1'],
                 ["style", "left", '41px'],
-                ["transform", "scaleX", '1']
+                ["transform", "scaleY", '1'],
+                ["style", "top", '62px']
             ],
             "${_bad15}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
                 ["style", "display", 'none'],
                 ["style", "left", '49px'],
-                ["style", "width", '20px']
-            ],
-            "${_ok48}": [
-                ["style", "top", '177px'],
-                ["style", "display", 'none'],
-                ["style", "height", '20px'],
-                ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
             "${_bad12}": [
@@ -2201,11 +2197,18 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_ok24}": [
+            "${_ok48}": [
                 ["style", "top", '177px'],
-                ["style", "height", '20px'],
                 ["style", "display", 'none'],
+                ["style", "height", '20px'],
                 ["style", "left", '79px'],
+                ["style", "width", '20px']
+            ],
+            "${_bad9}": [
+                ["style", "top", '177px'],
+                ["style", "display", 'none'],
+                ["style", "height", '20px'],
+                ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
             "${_ok47}": [
@@ -2222,14 +2225,14 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_ok10}": [
+            "${_ok32}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
                 ["style", "display", 'none'],
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_ok32}": [
+            "${_ok10}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
                 ["style", "display", 'none'],
@@ -2278,11 +2281,11 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_bad9}": [
+            "${_ok24}": [
                 ["style", "top", '177px'],
-                ["style", "display", 'none'],
                 ["style", "height", '20px'],
-                ["style", "left", '49px'],
+                ["style", "display", 'none'],
+                ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
             "${_bad14}": [
@@ -2292,9 +2295,16 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
+            "${_ok30}": [
+                ["style", "top", '177px'],
+                ["style", "display", 'none'],
+                ["style", "height", '20px'],
+                ["style", "left", '79px'],
+                ["style", "width", '20px']
+            ],
             "${_checkbox_1}": [
                 ["style", "opacity", '1'],
-                ["style", "left", '198px'],
+                ["style", "cursor", 'auto'],
                 ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["transform", "scaleY", '0.2'],
                 ["color", "border-color", 'rgba(255,255,255,0.00)'],
@@ -2309,14 +2319,7 @@ var symbols = {
                 ["style", "display", 'block'],
                 ["style", "height", '50px'],
                 ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "cursor", 'auto']
-            ],
-            "${_ok30}": [
-                ["style", "top", '177px'],
-                ["style", "display", 'none'],
-                ["style", "height", '20px'],
-                ["style", "left", '79px'],
-                ["style", "width", '20px']
+                ["style", "left", '198px']
             ],
             "${_bad46}": [
                 ["style", "top", '177px'],
@@ -2408,7 +2411,7 @@ var symbols = {
                 ["style", "top", '483px'],
                 ["style", "height", '45px'],
                 ["style", "cursor", 'pointer'],
-                ["style", "left", '541px'],
+                ["style", "left", '520px'],
                 ["style", "width", '45px']
             ],
             "${_bad35}": [
@@ -2418,7 +2421,7 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_bad29}": [
+            "${_bad36}": [
                 ["style", "top", '177px'],
                 ["style", "height", '20px'],
                 ["style", "display", 'none'],
@@ -2446,11 +2449,11 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_ok33}": [
+            "${_bad2}": [
                 ["style", "top", '177px'],
-                ["style", "display", 'none'],
                 ["style", "height", '20px'],
-                ["style", "left", '79px'],
+                ["style", "display", 'none'],
+                ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
             "${_bad17}": [
@@ -2460,21 +2463,7 @@ var symbols = {
                 ["style", "left", '49px'],
                 ["style", "width", '20px']
             ],
-            "${_bad36}": [
-                ["style", "top", '177px'],
-                ["style", "height", '20px'],
-                ["style", "display", 'none'],
-                ["style", "left", '49px'],
-                ["style", "width", '20px']
-            ],
-            "${_bad47}": [
-                ["style", "top", '177px'],
-                ["style", "height", '20px'],
-                ["style", "display", 'none'],
-                ["style", "left", '49px'],
-                ["style", "width", '20px']
-            ],
-            "${_bad5}": [
+            "${_bad26}": [
                 ["style", "top", '177px'],
                 ["style", "display", 'none'],
                 ["style", "height", '20px'],
@@ -2488,12 +2477,27 @@ var symbols = {
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
             ],
-            "${_ok6}": [
+            "${_bad5}": [
                 ["style", "top", '177px'],
-                ["style", "height", '20px'],
                 ["style", "display", 'none'],
+                ["style", "height", '20px'],
+                ["style", "left", '49px'],
+                ["style", "width", '20px']
+            ],
+            "${_ok44}": [
+                ["style", "top", '177px'],
+                ["style", "display", 'none'],
+                ["style", "height", '20px'],
                 ["style", "left", '79px'],
                 ["style", "width", '20px']
+            ],
+            "${_bt_reiniciar}": [
+                ["style", "top", '590px'],
+                ["transform", "scaleY", '1'],
+                ["style", "height", '45px'],
+                ["transform", "scaleX", '1'],
+                ["style", "left", '470px'],
+                ["style", "width", '45px']
             ]
         }
     },
@@ -2512,7 +2516,8 @@ var symbols = {
                 { id: "eid1235", tween: [ "style", "${_bad50}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1188", tween: [ "style", "${_ok13}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1186", tween: [ "style", "${_ok14}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1245", tween: [ "style", "${_bad45}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1467", tween: [ "style", "${_hotspot_solucion}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1466", tween: [ "style", "${_bt_solucion}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1189", tween: [ "style", "${_bad13}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1465", tween: [ "style", "${_bt_ayuda}", "top", '483px', { fromValue: '590px'}], position: 1550, duration: 300 },
                 { id: "eid1194", tween: [ "style", "${_ok40}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
@@ -2521,16 +2526,16 @@ var symbols = {
                 { id: "eid1246", tween: [ "style", "${_ok44}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1163", tween: [ "style", "${_bad5}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1204", tween: [ "style", "${_ok35}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1283", tween: [ "style", "${_resp_incorrecta}", "width", '530px', { fromValue: '530px'}], position: 0, duration: 0 },
+                { id: "eid1212", tween: [ "style", "${_ok31}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1213", tween: [ "style", "${_bad31}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1164", tween: [ "style", "${_ok6}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1232", tween: [ "style", "${_ok21}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1282", tween: [ "style", "${_resp_correcta}", "width", '530px', { fromValue: '530px'}], position: 0, duration: 0 },
                 { id: "eid1178", tween: [ "style", "${_ok18}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1184", tween: [ "style", "${_ok15}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1299", tween: [ "style", "${_help_checkbox}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1234", tween: [ "style", "${_ok50}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1223", tween: [ "style", "${_bad26}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1158", tween: [ "style", "${_ok3}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1209", tween: [ "style", "${_bad33}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1160", tween: [ "style", "${_ok4}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1459", tween: [ "style", "${_bt_validar}", "top", '483px', { fromValue: '590px'}], position: 1550, duration: 300 },
                 { id: "eid1220", tween: [ "style", "${_ok27}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
@@ -2540,8 +2545,8 @@ var symbols = {
                 { id: "eid1233", tween: [ "style", "${_bad21}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1244", tween: [ "style", "${_ok45}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1197", tween: [ "style", "${_bad39}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1171", tween: [ "style", "${_bad9}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1175", tween: [ "style", "${_bad20}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1448", tween: [ "style", "${_Text}", "opacity", '1', { fromValue: '1'}], position: 30, duration: 0 },
+                { id: "eid1221", tween: [ "style", "${_bad27}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1243", tween: [ "style", "${_bad46}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1441", tween: [ "transform", "${_checkbox_4}", "scaleX", '1', { fromValue: '0.2'}], position: 1245, duration: 300 },
                 { id: "eid1437", tween: [ "transform", "${_checkbox_1}", "scaleX", '1', { fromValue: '0.2'}], position: 450, duration: 250 },
@@ -2600,27 +2605,28 @@ var symbols = {
                 { id: "eid1286", tween: [ "style", "${_resp_correcta}", "left", '227px', { fromValue: '227px'}], position: 0, duration: 0 },
                 { id: "eid1216", tween: [ "style", "${_ok29}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1229", tween: [ "style", "${_bad23}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1287", tween: [ "style", "${_resp_correcta}", "top", '234px', { fromValue: '234px'}], position: 0, duration: 0 },
                 { id: "eid1239", tween: [ "style", "${_bad48}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1190", tween: [ "style", "${_ok12}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1252", tween: [ "style", "${_ok41}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1177", tween: [ "style", "${_bad19}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1252", tween: [ "style", "${_ok41}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1190", tween: [ "style", "${_ok12}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1171", tween: [ "style", "${_bad9}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1175", tween: [ "style", "${_bad20}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1180", tween: [ "style", "${_ok17}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1448", tween: [ "style", "${_Text}", "opacity", '1', { fromValue: '1'}], position: 30, duration: 0 },
+                { id: "eid1169", tween: [ "style", "${_bad8}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1294", tween: [ "style", "${_ok_bad}", "left", '0px', { fromValue: '0px'}], position: 0, duration: 0 },
                 { id: "eid1174", tween: [ "style", "${_ok20}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1224", tween: [ "style", "${_ok26}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1169", tween: [ "style", "${_bad8}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1293", tween: [ "style", "${_ok_bad}", "height", '768px', { fromValue: '768px'}], position: 0, duration: 0 },
                 { id: "eid1195", tween: [ "style", "${_bad40}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1446", tween: [ "style", "${_Text}", "top", '63px', { fromValue: '-100px'}], position: 0, duration: 450 },
+                { id: "eid1287", tween: [ "style", "${_resp_correcta}", "top", '234px', { fromValue: '234px'}], position: 0, duration: 0 },
+                { id: "eid1316", tween: [ "transform", "${_slide1}", "scaleX", '1', { fromValue: '1'}], position: 2250, duration: 0 },
                 { id: "eid1173", tween: [ "style", "${_bad10}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid499", tween: [ "style", "${_resp_correcta}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1316", tween: [ "transform", "${_slide1}", "scaleX", '1', { fromValue: '1'}], position: 2250, duration: 0 },
-                { id: "eid1209", tween: [ "style", "${_bad33}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1285", tween: [ "style", "${_resp_incorrecta}", "height", '160px', { fromValue: '160px'}], position: 0, duration: 0 },
                 { id: "eid1179", tween: [ "style", "${_bad18}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1205", tween: [ "style", "${_bad35}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1285", tween: [ "style", "${_resp_incorrecta}", "height", '160px', { fromValue: '160px'}], position: 0, duration: 0 },
+                { id: "eid1158", tween: [ "style", "${_ok3}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1196", tween: [ "style", "${_ok39}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid1245", tween: [ "style", "${_bad45}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1238", tween: [ "style", "${_ok48}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1237", tween: [ "style", "${_bad49}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1218", tween: [ "style", "${_ok28}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
@@ -2629,17 +2635,17 @@ var symbols = {
                 { id: "eid1443", tween: [ "transform", "${_checkbox_3}", "scaleX", '1', { fromValue: '0.2'}], position: 950, duration: 295 },
                 { id: "eid1288", tween: [ "style", "${_resp_incorrecta}", "left", '227px', { fromValue: '227px'}], position: 0, duration: 0 },
                 { id: "eid1191", tween: [ "style", "${_bad12}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1212", tween: [ "style", "${_ok31}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1282", tween: [ "style", "${_resp_correcta}", "width", '530px', { fromValue: '530px'}], position: 0, duration: 0 },
+                { id: "eid1283", tween: [ "style", "${_resp_incorrecta}", "width", '530px', { fromValue: '530px'}], position: 0, duration: 0 },
+                { id: "eid1232", tween: [ "style", "${_ok21}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1226", tween: [ "style", "${_ok25}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1127", tween: [ "style", "${_ok37}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid1446", tween: [ "style", "${_Text}", "top", '63px', { fromValue: '-100px'}], position: 0, duration: 450 },
+                { id: "eid1293", tween: [ "style", "${_ok_bad}", "height", '768px', { fromValue: '768px'}], position: 0, duration: 0 },
                 { id: "eid1250", tween: [ "style", "${_ok42}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1207", tween: [ "style", "${_bad34}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1251", tween: [ "style", "${_bad42}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1442", tween: [ "transform", "${_checkbox_4}", "scaleY", '1', { fromValue: '0.2'}], position: 1245, duration: 300 },
-                { id: "eid1221", tween: [ "style", "${_bad27}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1440", tween: [ "transform", "${_checkbox_2}", "scaleY", '1', { fromValue: '0.2'}], position: 700, duration: 250 },
+                { id: "eid1224", tween: [ "style", "${_ok26}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1217", tween: [ "style", "${_bad29}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid1444", tween: [ "transform", "${_checkbox_3}", "scaleY", '1', { fromValue: '0.2'}], position: 950, duration: 295 }            ]
         }
@@ -2748,10 +2754,10 @@ var symbols = {
     content: {
             dom: [
                 {
-                    type: 'image',
-                    rect: ['-44px', '-22px', '290px', '140px', 'auto', 'auto'],
-                    id: 'botones',
                     transform: [[0, 0], [], [], ['0.71', '0.71']],
+                    type: 'image',
+                    id: 'botones',
+                    rect: ['-44px', '-22px', '290px', '140px', 'auto', 'auto'],
                     clip: ['rect(0px 70px 70px 0px)'],
                     fill: ['rgba(0,0,0,0)', 'images/botones.png', '0px', '-70px']
                 }
@@ -2765,9 +2771,9 @@ var symbols = {
                 ["style", "top", '-21px'],
                 ["transform", "scaleY", '0.72'],
                 ["transform", "scaleX", '0.72'],
-                ["style", "clip", [0,70,70,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
                 ["style", "left", '-43px'],
-                ["style", "background-position", [0,0], {valueTemplate:'@@0@@px @@1@@px'} ]
+                ["style", "background-position", [-73.611111111111,0], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "clip", [0,70,70,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
             ],
             "${symbolSelector}": [
                 ["style", "height", '45px'],
@@ -2787,8 +2793,8 @@ var symbols = {
                 "down": 250
             },
             timeline: [
-                { id: "eid1275", tween: [ "style", "${_botones}", "background-position", [0,0], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,0]}], position: 0, duration: 0 },
-                { id: "eid1274", tween: [ "style", "${_botones}", "background-position", [0,-70], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,0]}], position: 250, duration: 0 },
+                { id: "eid1275", tween: [ "style", "${_botones}", "background-position", [-73.611111111111,0], { valueTemplate: '@@0@@px @@1@@px', fromValue: [-73.611111111111,0]}], position: 0, duration: 0 },
+                { id: "eid1274", tween: [ "style", "${_botones}", "background-position", [-73.611111111111,-70], { valueTemplate: '@@0@@px @@1@@px', fromValue: [-73.611111111111,0]}], position: 250, duration: 0 },
                 { id: "eid1301", tween: [ "style", "${_botones}", "top", '-21px', { fromValue: '-21px'}], position: 0, duration: 0 },
                 { id: "eid1300", tween: [ "style", "${_botones}", "top", '-22px', { fromValue: '-21px'}], position: 250, duration: 0 },
                 { id: "eid1325", tween: [ "style", "${_botones}", "left", '-43px', { fromValue: '-43px'}], position: 0, duration: 0 }            ]
@@ -2808,10 +2814,10 @@ var symbols = {
     content: {
             dom: [
                 {
-                    type: 'image',
-                    rect: ['-44px', '-23px', '290px', '140px', 'auto', 'auto'],
-                    id: 'botones2',
                     transform: [[0, 0], [], [], ['0.71', '0.71']],
+                    type: 'image',
+                    id: 'botones2',
+                    rect: ['-44px', '-23px', '290px', '140px', 'auto', 'auto'],
                     clip: ['rect(0px 70px 70px 0px)'],
                     fill: ['rgba(0,0,0,0)', 'images/botones.png', '-73px', '0px']
                 }
@@ -2825,9 +2831,9 @@ var symbols = {
                 ["style", "top", '-21px'],
                 ["transform", "scaleY", '0.72'],
                 ["transform", "scaleX", '0.72'],
-                ["style", "clip", [0,70,70,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
                 ["style", "left", '-43px'],
-                ["style", "background-position", [-73,0], {valueTemplate:'@@0@@px @@1@@px'} ]
+                ["style", "background-position", [-73,0], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "clip", [0,70,70,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
             ],
             "${symbolSelector}": [
                 ["style", "height", '45px'],
@@ -2867,10 +2873,10 @@ var symbols = {
     content: {
             dom: [
                 {
-                    type: 'image',
-                    rect: ['-45px', '-23px', '290px', '140px', 'auto', 'auto'],
-                    id: 'botones3',
                     transform: [[0, 0], [], [], ['0.71', '0.71']],
+                    type: 'image',
+                    id: 'botones3',
+                    rect: ['-45px', '-23px', '290px', '140px', 'auto', 'auto'],
                     clip: ['rect(0px 70px 70px 0px)'],
                     fill: ['rgba(0,0,0,0)', 'images/botones.png', '0px', '0px']
                 }
@@ -2884,9 +2890,9 @@ var symbols = {
                 ["style", "top", '-21px'],
                 ["transform", "scaleY", '0.72'],
                 ["transform", "scaleX", '0.72'],
-                ["style", "background-position", [-146,0], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["style", "left", '-44px'],
-                ["style", "clip", [0,70,70,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
+                ["style", "clip", [0,70,70,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+                ["style", "background-position", [-146,0], {valueTemplate:'@@0@@px @@1@@px'} ]
             ],
             "${symbolSelector}": [
                 ["style", "height", '45px'],
@@ -2929,10 +2935,10 @@ var symbols = {
     content: {
             dom: [
                 {
-                    type: 'image',
-                    rect: ['-45px', '-23px', '290px', '140px', 'auto', 'auto'],
-                    id: 'botones4',
                     transform: [[0, 0], [], [], ['0.71', '0.71']],
+                    type: 'image',
+                    id: 'botones4',
+                    rect: ['-45px', '-23px', '290px', '140px', 'auto', 'auto'],
                     clip: ['rect(0px 70px 70px 0px)'],
                     fill: ['rgba(0,0,0,0)', 'images/botones.png', '0px', '0px']
                 }
@@ -2946,9 +2952,9 @@ var symbols = {
                 ["style", "top", '-21px'],
                 ["transform", "scaleY", '0.72'],
                 ["transform", "scaleX", '0.72'],
-                ["style", "background-position", [-220,0], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["style", "left", '-44px'],
-                ["style", "clip", [0,70,70,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
+                ["style", "clip", [0,70,70,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+                ["style", "background-position", [-220,0], {valueTemplate:'@@0@@px @@1@@px'} ]
             ],
             "${symbolSelector}": [
                 ["style", "height", '45px'],
