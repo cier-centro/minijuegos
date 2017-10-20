@@ -1657,6 +1657,14 @@ var symbols = {
                     fill: ['rgba(0,66,104,1.00)']
                 },
                 {
+                    rect: ['266px', '245px', '414px', '158px', 'auto', 'auto'],
+                    borderRadius: ['5px 5px', '5px 5px', '5px 5px', '5px 5px'],
+                    id: 'Rectangle8Copy',
+                    stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                    type: 'rect',
+                    fill: ['rgba(0,66,104,1.00)']
+                },
+                {
                     rect: ['295px', '152px', '224px', '30px', 'auto', 'auto'],
                     id: 'TextCopy3',
                     text: 'Actividad Interactiva',
@@ -1678,7 +1686,7 @@ var symbols = {
                     fill: ['rgba(0,0,0,0)', 'images/icons-a.png', '-580.0009765625px', '0px']
                 },
                 {
-                    rect: ['266px', '258px', '416px', '168px', 'auto', 'auto'],
+                    rect: ['266px', '263px', '390px', '158px', 'auto', 'auto'],
                     font: ['Arial, Helvetica, sans-serif', 16, 'rgba(255,255,255,1)', '100', 'none', 'normal'],
                     id: 'Text',
                     text: 'Este minijuego tiene como objetivo encontrar alternativas para “Poner fin al hambre, lograr la seguridad alimentaria y la mejora de la nutrición y promover la agricultura sostenible”. objetivo #2  fijado por la ONU y que hace parte de los 17 objetivos de desarrollo sostenible para transformar nuestro mundo.<br>',
@@ -1697,15 +1705,6 @@ var symbols = {
         },
     states: {
         "Base State": {
-            "${_Text}": [
-                ["style", "top", '258px'],
-                ["style", "width", '416px'],
-                ["style", "opacity", '0'],
-                ["style", "height", '168px'],
-                ["style", "font-weight", '100'],
-                ["style", "left", '356px'],
-                ["style", "font-size", '16px']
-            ],
             "${_TextCopy3}": [
                 ["style", "top", '152px'],
                 ["style", "font-size", '22px'],
@@ -1716,9 +1715,23 @@ var symbols = {
                 ["style", "left", '262px'],
                 ["style", "width", '224px']
             ],
-            "${symbolSelector}": [
-                ["style", "height", '580px'],
-                ["style", "width", '980px']
+            "${_btn_iniciar2}": [
+                ["style", "top", '445px'],
+                ["transform", "scaleY", '0'],
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '0'],
+                ["style", "left", '505px'],
+                ["style", "cursor", 'pointer']
+            ],
+            "${_Text}": [
+                ["style", "font-weight", '100'],
+                ["style", "left", '356px'],
+                ["style", "font-size", '16px'],
+                ["style", "top", '263px'],
+                ["style", "text-align", 'left'],
+                ["style", "height", '158px'],
+                ["style", "width", '390px'],
+                ["style", "opacity", '0']
             ],
             "${_TextCopy2}": [
                 ["style", "top", '176px'],
@@ -1728,6 +1741,22 @@ var symbols = {
                 ["style", "font-weight", '900'],
                 ["style", "left", '262px'],
                 ["style", "width", '431px']
+            ],
+            "${_Rectangle8Copy}": [
+                ["color", "background-color", 'rgba(0,66,104,1.00)'],
+                ["style", "border-top-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "border-bottom-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "opacity", '1'],
+                ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "width", '0px'],
+                ["style", "top", '245px'],
+                ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "height", '158px'],
+                ["style", "left", '266px']
+            ],
+            "${symbolSelector}": [
+                ["style", "height", '580px'],
+                ["style", "width", '980px']
             ],
             "${_icons-a}": [
                 ["style", "top", '120px'],
@@ -1743,14 +1772,6 @@ var symbols = {
                 ["style", "opacity", '1'],
                 ["style", "background-position", [-580.0009765625,0], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["style", "left", '175px']
-            ],
-            "${_btn_iniciar2}": [
-                ["style", "top", '445px'],
-                ["transform", "scaleY", '0'],
-                ["transform", "scaleX", '0'],
-                ["style", "opacity", '0'],
-                ["style", "left", '505px'],
-                ["style", "cursor", 'pointer']
             ],
             "${_Rectangle8}": [
                 ["color", "background-color", 'rgba(0,66,104,1.00)'],
@@ -1773,6 +1794,7 @@ var symbols = {
             duration: 4000,
             autoPlay: false,
             timeline: [
+                { id: "eid2193", tween: [ "style", "${_Rectangle8Copy}", "width", '460px', { fromValue: '0px'}], position: 1500, duration: 750, easing: "easeOutBack" },
                 { id: "eid1984", tween: [ "style", "${_TextCopy3}", "left", '295px', { fromValue: '262px'}], position: 1000, duration: 597, easing: "easeOutBack" },
                 { id: "eid2000", tween: [ "style", "${_TextCopy3}", "left", '332px', { fromValue: '295px'}], position: 3000, duration: 500, easing: "easeOutBack" },
                 { id: "eid1985", tween: [ "style", "${_TextCopy3}", "opacity", '1', { fromValue: '0'}], position: 1000, duration: 597, easing: "easeOutBack" },
@@ -1790,11 +1812,15 @@ var symbols = {
                 { id: "eid2009", tween: [ "style", "${_Rectangle8}", "left", '297px', { fromValue: '266px'}], position: 3000, duration: 750, easing: "easeOutBack" },
                 { id: "eid1982", tween: [ "style", "${_TextCopy2}", "left", '295px', { fromValue: '262px'}], position: 1298, duration: 597, easing: "easeOutBack" },
                 { id: "eid1999", tween: [ "style", "${_TextCopy2}", "left", '332px', { fromValue: '295px'}], position: 3250, duration: 500, easing: "easeOutBack" },
+                { id: "eid2192", tween: [ "style", "${_Rectangle8Copy}", "left", '297px', { fromValue: '266px'}], position: 2750, duration: 750, easing: "easeOutBack" },
+                { id: "eid1987", tween: [ "transform", "${_btn_iniciar2}", "scaleX", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
                 { id: "eid2152", tween: [ "style", "${_Text}", "opacity", '1', { fromValue: '0'}], position: 1750, duration: 750, easing: "easeOutBack" },
+                { id: "eid2188", tween: [ "style", "${_Text}", "opacity", '0', { fromValue: '1'}], position: 2500, duration: 500, easing: "easeOutBack" },
                 { id: "eid1983", tween: [ "style", "${_TextCopy2}", "opacity", '1', { fromValue: '0'}], position: 1298, duration: 597, easing: "easeOutBack" },
                 { id: "eid1993", tween: [ "style", "${_TextCopy2}", "opacity", '0', { fromValue: '1'}], position: 3250, duration: 500, easing: "easeOutBack" },
-                { id: "eid2150", tween: [ "style", "${_Text}", "left", '307px', { fromValue: '356px'}], position: 1750, duration: 750, easing: "easeOutBack" },
-                { id: "eid1987", tween: [ "transform", "${_btn_iniciar2}", "scaleX", '1', { fromValue: '0'}], position: 1500, duration: 1000, easing: "easeOutBack" },
+                { id: "eid2150", tween: [ "style", "${_Text}", "left", '295px', { fromValue: '356px'}], position: 1750, duration: 750, easing: "easeOutBack" },
+                { id: "eid2187", tween: [ "style", "${_Text}", "left", '184px', { fromValue: '295px'}], position: 2500, duration: 500, easing: "easeOutBack" },
+                { id: "eid2191", tween: [ "style", "${_Rectangle8Copy}", "opacity", '0', { fromValue: '1'}], position: 2750, duration: 750, easing: "easeOutBack" },
                 { id: "eid2012", tween: [ "style", "${_icons-a}", "opacity", '0', { fromValue: '1'}], position: 3250, duration: 750, easing: "easeOutBack" }            ]
         }
     }
@@ -4510,6 +4536,14 @@ var symbols = {
                     fill: ['rgba(0,66,104,1.00)']
                 },
                 {
+                    rect: ['266px', '223px', '414px', '99px', 'auto', 'auto'],
+                    borderRadius: ['5px 5px', '5px 5px', '5px 5px', '5px 5px'],
+                    id: 'Rectangle8Copy2',
+                    stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                    type: 'rect',
+                    fill: ['rgba(0,66,104,1.00)']
+                },
+                {
                     rect: ['295px', '135px', '224px', '30px', 'auto', 'auto'],
                     id: 'TextCopy3',
                     text: 'Actividad Interactiva',
@@ -4531,7 +4565,7 @@ var symbols = {
                     fill: ['rgba(0,0,0,0)', 'images/icons-a.png', '-349.0009765625px', '0px']
                 },
                 {
-                    rect: ['312px', '238px', '439px', '73px', 'auto', 'auto'],
+                    rect: ['312px', '238px', '405px', '99px', 'auto', 'auto'],
                     font: ['Arial, Helvetica, sans-serif', 16, 'rgba(255,255,255,1)', '100', 'none', 'normal'],
                     id: 'Text2',
                     text: 'De acuerdo a los 17 objetivos de la ONU en este minijuego el objetivo, será  promover Sociedades justas, pacíficas e inclusivas.  Objetivo #16<br>',
@@ -4550,11 +4584,6 @@ var symbols = {
         },
     states: {
         "Base State": {
-            "${_Text2}": [
-                ["style", "height", '73px'],
-                ["style", "opacity", '0'],
-                ["style", "left", '388px']
-            ],
             "${_TextCopy3}": [
                 ["style", "top", '135px'],
                 ["style", "width", '224px'],
@@ -4565,6 +4594,36 @@ var symbols = {
                 ["style", "left", '262px'],
                 ["style", "font-size", '22px']
             ],
+            "${_btn_iniciar2}": [
+                ["style", "top", '431px'],
+                ["transform", "scaleY", '0'],
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '0'],
+                ["style", "left", '505px'],
+                ["style", "cursor", 'pointer']
+            ],
+            "${_Rectangle8Copy2}": [
+                ["color", "background-color", 'rgba(0,66,104,1.00)'],
+                ["style", "border-top-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "border-bottom-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "opacity", '1'],
+                ["style", "border-top-right-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "width", '0px'],
+                ["style", "top", '223px'],
+                ["style", "border-bottom-left-radius", [5,5], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "height", '99px'],
+                ["style", "left", '276px']
+            ],
+            "${symbolSelector}": [
+                ["style", "height", '580px'],
+                ["style", "width", '980px']
+            ],
+            "${_Text2}": [
+                ["style", "height", '99px'],
+                ["style", "opacity", '0'],
+                ["style", "left", '388px'],
+                ["style", "width", '405px']
+            ],
             "${_TextCopy2}": [
                 ["style", "top", '159px'],
                 ["style", "height", '30px'],
@@ -4573,18 +4632,6 @@ var symbols = {
                 ["style", "opacity", '0'],
                 ["style", "left", '262px'],
                 ["style", "width", '431px']
-            ],
-            "${symbolSelector}": [
-                ["style", "height", '580px'],
-                ["style", "width", '980px']
-            ],
-            "${_btn_iniciar2}": [
-                ["style", "top", '431px'],
-                ["transform", "scaleY", '0'],
-                ["transform", "scaleX", '0'],
-                ["style", "opacity", '0'],
-                ["style", "left", '505px'],
-                ["style", "cursor", 'pointer']
             ],
             "${_icons-a}": [
                 ["style", "top", '103px'],
@@ -4623,6 +4670,7 @@ var symbols = {
             autoPlay: false,
             timeline: [
                 { id: "eid2156", tween: [ "style", "${_Text2}", "opacity", '1', { fromValue: '0'}], position: 1750, duration: 750, easing: "easeOutBack" },
+                { id: "eid2190", tween: [ "style", "${_Text2}", "opacity", '0', { fromValue: '1'}], position: 2500, duration: 500, easing: "easeOutBack" },
                 { id: "eid1984", tween: [ "style", "${_TextCopy3}", "left", '305px', { fromValue: '262px'}], position: 1000, duration: 597, easing: "easeOutBack" },
                 { id: "eid2000", tween: [ "style", "${_TextCopy3}", "left", '332px', { fromValue: '305px'}], position: 3000, duration: 500, easing: "easeOutBack" },
                 { id: "eid1985", tween: [ "style", "${_TextCopy3}", "opacity", '1', { fromValue: '0'}], position: 1000, duration: 597, easing: "easeOutBack" },
@@ -4635,10 +4683,14 @@ var symbols = {
                 { id: "eid2011", tween: [ "style", "${_Rectangle8}", "opacity", '0', { fromValue: '1'}], position: 3000, duration: 750, easing: "easeOutBack" },
                 { id: "eid1981", tween: [ "transform", "${_icons-a}", "scaleY", '1', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
                 { id: "eid2154", tween: [ "style", "${_Text2}", "left", '312px', { fromValue: '388px'}], position: 1750, duration: 750, easing: "easeOutBack" },
+                { id: "eid2189", tween: [ "style", "${_Text2}", "left", '395px', { fromValue: '312px'}], position: 2500, duration: 500, easing: "easeOutBack" },
                 { id: "eid1980", tween: [ "transform", "${_icons-a}", "scaleX", '1', { fromValue: '0'}], position: 0, duration: 750, easing: "easeOutBack" },
+                { id: "eid2195", tween: [ "style", "${_Rectangle8Copy2}", "left", '297px', { fromValue: '276px'}], position: 2750, duration: 750, easing: "easeOutBack" },
                 { id: "eid2009", tween: [ "style", "${_Rectangle8}", "left", '297px', { fromValue: '276px'}], position: 3000, duration: 750, easing: "easeOutBack" },
                 { id: "eid1982", tween: [ "style", "${_TextCopy2}", "left", '305px', { fromValue: '262px'}], position: 1298, duration: 597, easing: "easeOutBack" },
                 { id: "eid1999", tween: [ "style", "${_TextCopy2}", "left", '332px', { fromValue: '305px'}], position: 3250, duration: 500, easing: "easeOutBack" },
+                { id: "eid2194", tween: [ "style", "${_Rectangle8Copy2}", "opacity", '0', { fromValue: '1'}], position: 2750, duration: 750, easing: "easeOutBack" },
+                { id: "eid2196", tween: [ "style", "${_Rectangle8Copy2}", "width", '460px', { fromValue: '0px'}], position: 1250, duration: 750, easing: "easeOutBack" },
                 { id: "eid1989", tween: [ "style", "${_btn_iniciar2}", "left", '637px', { fromValue: '505px'}], position: 1500, duration: 1000, easing: "easeOutBack" },
                 { id: "eid1991", tween: [ "style", "${_btn_iniciar2}", "left", '477px', { fromValue: '637px'}], position: 2500, duration: 500, easing: "easeOutBack" },
                 { id: "eid2012", tween: [ "style", "${_icons-a}", "opacity", '0', { fromValue: '1'}], position: 3250, duration: 750, easing: "easeOutBack" },
