@@ -7486,25 +7486,25 @@ var symbols = {
     content: {
             dom: [
                 {
-                    transform: [[0, 0], [], [], ['0.92', '0.92']],
-                    type: 'image',
-                    id: 'icons_home',
                     rect: ['2px', '-6px', '56px', '495px', 'auto', 'auto'],
+                    transform: [[], [], [], ['0.92', '0.92']],
+                    id: 'icons_home',
+                    type: 'image',
                     clip: ['rect(4.34782600402832px 56px 56.73891830444336px 0px)'],
-                    fill: ['rgba(0,0,0,0)', 'images/icons_home.png', '0px', '-271.19565217392px']
+                    fill: ['rgba(0,0,0,0)', 'images/icons_home.png', '0px', '2.7173913043409px']
                 },
                 {
-                    transform: [[0, 0], [], [], ['0.65', '0.65']],
-                    id: 'label_home',
-                    type: 'image',
                     rect: ['36px', '-5px', '158px', '60px', 'auto', 'auto'],
+                    id: 'label_home',
+                    transform: [[], [], [], ['0.65', '0.65']],
+                    type: 'image',
                     fill: ['rgba(0,0,0,0)', 'images/label_home.png', '0px', '0px']
                 },
                 {
-                    type: 'rect',
+                    rect: ['0px', '0px', '170px', '50px', 'auto', 'auto'],
                     id: 'Rectangle11',
                     stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                    rect: ['0px', '0px', '170px', '50px', 'auto', 'auto'],
+                    type: 'rect',
                     fill: ['rgba(255,255,255,0.00)']
                 }
             ],
@@ -7513,6 +7513,14 @@ var symbols = {
         },
     states: {
         "Base State": {
+            "${symbolSelector}": [
+                ["style", "height", '50px'],
+                ["style", "overflow", 'hidden'],
+                ["style", "width", '170px']
+            ],
+            "${_Rectangle11}": [
+                ["color", "background-color", 'rgba(255,255,255,0.00)']
+            ],
             "${_icons_home}": [
                 ["style", "top", '-6px'],
                 ["transform", "scaleY", '0'],
@@ -7523,7 +7531,7 @@ var symbols = {
                 ["style", "-o-transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
                 ["style", "transform-origin", [51.94,6.19],{valueTemplate:'@@0@@% @@1@@%'}],
                 ["transform", "scaleX", '0'],
-                ["style", "background-position", [0,-271.19565217392], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "background-position", [0,2.7173913043409], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["style", "clip", [4.34782600402832,56,56.73891830444336,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
                 ["style", "left", '2px']
             ],
@@ -7534,14 +7542,6 @@ var symbols = {
                 ["transform", "scaleX", '0.65'],
                 ["style", "opacity", '0'],
                 ["style", "left", '40px']
-            ],
-            "${_Rectangle11}": [
-                ["color", "background-color", 'rgba(255,255,255,0.00)']
-            ],
-            "${symbolSelector}": [
-                ["style", "height", '50px'],
-                ["style", "overflow", 'hidden'],
-                ["style", "width", '170px']
             ]
         }
     },
